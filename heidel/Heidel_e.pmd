@@ -1,0 +1,41 @@
+$Results
+  System_free         : trace  watch_state  Transporter_1.cur_trunk_quant = 0 and
+                                            Transporter_2.cur_trunk_quant = 0 and
+                                            Conveyer_1.cur_trunk_quant = 0
+  Transporter_1_quant : trace  watch_par    Transporter_1.cur_trunk_quant
+  Transporter_2_quant : trace  watch_par    Transporter_2.cur_trunk_quant
+  Trunks_in_system    : trace  watch_quant  a_trunk  NoCheck
+  Rest_length         : trace  watch_value  a_trunk  NoCheck  a_trunk.length / 1.0
+  Rest_diameter_b     : trace  watch_value  a_trunk  NoCheck  a_trunk.diameter_b / 1.0
+  Rest_cubic_m        : trace  watch_value  a_trunk  NoCheck  a_trunk.cubic_m
+  Trunk_util_length   : trace  watch_value  a_trunk  NoCheck  a_trunk.utilization_length
+  Trunk_util_cubic_m  : trace  watch_value  a_trunk  NoCheck  a_trunk.utilization_cm
+  Piece_util_cubic_m  : trace  watch_value  a_piece_of_trunk  NoCheck  a_piece_of_trunk.utilization
+  Pieces_quantity     : trace  watch_value  a_piece_of_trunk  NoCheck  a_piece_of_trunk.pieces_quant
+  Pieces_diam_diff    : trace  watch_value  a_piece_of_trunk  NoCheck  a_piece_of_trunk.diameter_b - a_piece_of_trunk.req_diam
+
+  Orders_flowtime     : trace  watch_value  an_order_for_statistic  NoCheck  Time_now - an_order_for_statistic.arrival_time
+  Orders_lateness     : trace  watch_value  an_order_for_statistic  NoCheck  Time_now - an_order_for_statistic.due_date
+  Orders_before       : trace  watch_value  an_order_for_statistic  Time_now - an_order_for_statistic.due_date <= 0.0
+                                            Time_now - an_order_for_statistic.due_date
+  Orders_after        : trace  watch_value  an_order_for_statistic  Time_now - an_order_for_statistic.due_date > 0.0
+                                            Time_now - an_order_for_statistic.due_date
+  Orders_quantity     : trace  watch_value  an_order_for_statistic  NoCheck  an_order_for_statistic.quantity
+  Orders_ready_quant  : trace  watch_value  an_order_for_statistic  NoCheck  an_order_for_statistic.ready_quant
+  Orders_pieces_quant : trace  watch_value  an_order_for_statistic  NoCheck  an_order_for_statistic.pieces_quant
+
+  Trunks_processed           : get_value Cutting_machine_1.trunks_processed
+  Trunks_per_hour            : get_value Cutting_machine_1.trunks_processed / Time_now
+  Orders_processed           : get_value Cutting_machine_1.orders_processed
+  Pieces_of_trunk_processed  : get_value Cutting_machine_1.pieces_of_trunk_processed
+  Total_trunks_length        : get_value Cutting_machine_1.total_trunks_length
+  Trunks_length_per_hour     : get_value Cutting_machine_1.total_trunks_length / Time_now
+  Total_rest_length          : get_value Cutting_machine_1.total_rest_length
+  Total_trunks_cubic_m       : get_value Cutting_machine_1.total_trunks_cubic_m
+  Total_rest_cubic_m         : get_value Cutting_machine_1.total_rest_cubic_m
+  Total_trunks_util_length   : get_value (Cutting_machine_1.total_trunks_length - Cutting_machine_1.total_rest_length) / Cutting_machine_1.total_trunks_length
+  Total_trunks_util_cubic_m  : get_value (Cutting_machine_1.total_trunks_cubic_m - Cutting_machine_1.total_rest_cubic_m) / Cutting_machine_1.total_trunks_cubic_m
+  Total_output_cubic_m       : get_value Cutting_machine_1.total_output_cubic_m
+  Total_util_cubic_m         : get_value Cutting_machine_1.total_output_cubic_m / Cutting_machine_1.total_trunks_cubic_m
+
+$End

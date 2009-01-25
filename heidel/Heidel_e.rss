@@ -1,0 +1,75 @@
+$Resources
+  Transporter_1 : a_transporter  trace  Tr_1  5.0  0  1200  *  *  *  *  *  *  *  *  *
+  Transporter_2 : a_transporter  trace  Tr_2  3.0  0  1200  *  *  *  *  *  *  *  *  *
+  Transporter_3 : a_transporter  trace  Tr_3  5.0  0  1200  *  forward  *  *  *  *  *  *  *
+  Conveyer_1    : a_conveyer  {trace}  Cv_1   8.3  25  0  2175  *  *  *  *
+  Conveyer_2    : a_conveyer  {trace}  Cv_2   8.3  25  0  2700  *  *  *  *
+  Conveyer_3    : a_conveyer  {trace}  Cv_3   8.3  25  0  1100  *  *  *  *
+  Conveyer_4    : a_conveyer  {trace}  Cv_4   8.3  25  0  1100  *  *  *  *
+  Conveyer_5    : a_conveyer  {trace}  Cv_5   8.3  25  0  5800  *  *  *  *
+  Storage_1     : a_storage      St_1    500  right   2.5  *  *  *  *  *
+  Storage_2     : a_storage      St_2    500  left    2.5  *  *  *  *  *
+  Storage_3     : a_storage      St_3    900  right   3.0  *  *  *  *  *
+  Storage_4     : a_storage      St_4    900  left    3.0  *  *  *  *  *
+  Storage_5     : a_storage      St_5   1400  right   4.0  *  *  *  *  *
+  Storage_6     : a_storage      St_6   1400  left    4.0  *  *  *  *  *
+  Storage_7     : a_storage      St_7   1900  right   4.0  *  *  *  *  *
+  Storage_8     : a_storage      St_8   1900  left    4.0  *  *  *  *  *
+  Storage_9     : a_storage      St_9   2500  right   5.0  *  *  *  *  *
+  Storage_10    : a_storage      St_10  2500  left    5.0  *  *  *  *  *
+  Storage_11    : a_storage      St_11  3100  right   5.0  *  *  *  *  *
+  Storage_12    : a_storage      St_12  3100  left    5.0  *  *  *  *  *
+  Storage_13    : a_storage      St_13  3700  right   5.0  *  *  *  *  *
+  Storage_14    : a_storage      St_14  3700  left    5.0  *  *  *  *  *
+  Storage_15    : a_storage      St_15  4400  right   6.0  *  *  *  *  *
+  Storage_16    : a_storage      St_16  4400  left    6.0  *  *  *  *  *
+  Storage_17    : a_storage      St_17  5100  right   6.0  *  *  *  *  *
+  Storage_18    : a_storage      St_18  5100  left    6.0  *  *  *  *  *
+  Storage_19    : a_storage      St_19  5800  right   6.0  *  *  *  *  *
+  Storage_20    : a_storage      St_20  5800  left    6.0  *  *  *  *  *
+  Storage_21    : a_storage      St_21  1600  right   8.0  *  *  *  *  *
+  Storage_22    : a_storage      St_22  1600  left    8.0  *  *  *  *  *
+  Storage_23    : a_storage      St_23  2700  right  10.0  *  *  *  *  *
+  Storage_24    : a_storage      St_24  2700  left   10.0  *  *  *  *  *
+  Storage_25    : a_storage      St_25  3900  right  10.0  *  *  *  *  *
+  Storage_26    : a_storage      St_26  3900  left   10.0  *  *  *  *  *
+  Storage_27    : a_storage      St_27  5300  right  12.0  *  *  *  *  *
+  Storage_28    : a_storage      St_28  5300  left   12.0  *  *  *  *  *
+  Storage_29    : a_storage      St_29   000  left   12.0  *  *  *  *  *
+  Storage_30    : a_storage      St_30   000  left   12.0  *  *  *  *  *
+  Cutting_machine_1      : a_cutting_machine  trace  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+  Measurement_position_1 : a_measurement_position  *  *  *  *  *
+
+  Order_1       : an_order_position trace  1  1  *  0  0.0  *  _60x60  50  50  10  0.0  pine  *  1  *  0  *  *  *
+  Order_2       : an_order_position trace  2  1  *  0  0.0  *  _60x60  50  50  10  0.0  pine  *  1  *  0  *  *  *
+  Order_3       : an_order_position trace  3  1  *  0  0.0  *  _60x60  50  50  10  0.0  pine  *  1  *  0  *  *  *
+  Order_4       : an_order_position trace  4  1  *  0  0.0  *  _60x60  50  50  10  0.0  pine  *  1  *  0  *  *  *
+  Order_5       : an_order_position trace  5  1  *  0  0.0  *  _60x60  50  50  10  0.0  pine  *  1  *  0  *  *  *
+  Order_6       : an_order_position trace  6  1  *  0  0.0  *  _60x60  50  50  10  0.0  pine  *  1  *  0  *  *  *
+  Order_7       : an_order_position trace  7  1  *  0  0.0  *  _60x60  50  50  10  0.0  pine  *  1  *  0  *  *  *
+  Order_8       : an_order_position trace  8  1  *  0  0.0  *  _60x60  50  50  10  0.0  pine  *  1  *  0  *  *  *
+  Order_9       : an_order_position trace  9  1  *  0  0.0  *  _60x60  50  50  10  0.0  pine  *  1  *  0  *  *  *
+  Order_10      : an_order_position trace 10  1  *  0  0.0  *  _60x60  50  50  10  0.0  pine  *  1  *  0  *  *  *
+  Order_11      : an_order_position trace 11  1  *  0  0.0  *  _60x60  50  50  10  0.0  pine  *  1  *  0  *  *  *
+  Order_12      : an_order_position trace 12  1  *  0  0.0  *  _60x60  50  50  10  0.0  pine  *  1  *  0  *  *  *
+  Order_13      : an_order_position trace 13  1  *  0  0.0  *  _60x60  50  50  10  0.0  pine  *  1  *  0  *  *  *
+  Order_14      : an_order_position trace 14  1  *  0  0.0  *  _60x60  50  50  10  0.0  pine  *  1  *  0  *  *  *
+  Order_15      : an_order_position trace 15  1  *  0  0.0  *  _60x60  50  50  10  0.0  pine  *  1  *  0  *  *  *
+  Order_16      : an_order_position trace 16  1  *  0  0.0  *  _60x60  50  50  10  0.0  pine  *  1  *  0  *  *  *
+
+  Trunk_to_show_1 : a_trunk_to_show trace  *  *  *  *  *
+  Trunk_to_show_2 : a_trunk_to_show trace  *  *  *  *  *
+  Trunk_to_show_3 : a_trunk_to_show trace  *  *  *  *  *
+  Trunk_to_show_4 : a_trunk_to_show trace  *  *  *  *  *
+  Trunk_to_show_5 : a_trunk_to_show trace  *  *  *  *  *
+  Trunk_to_show_6 : a_trunk_to_show trace  *  *  *  *  *
+  Trunk_to_show_7 : a_trunk_to_show trace  *  *  *  *  *
+
+  Cut_out_result_1   : a_cut_out_result trace  1  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+  Cut_out_result_2   : a_cut_out_result trace  2  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+  Cut_out_result_3   : a_cut_out_result trace  3  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+  Cut_out_result_4   : a_cut_out_result trace  4  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+  Cut_out_result_5   : a_cut_out_result trace  5  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+  Cut_out_result_6   : a_cut_out_result trace  6  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+  Cut_out_result_7   : a_cut_out_result trace  7  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+$End

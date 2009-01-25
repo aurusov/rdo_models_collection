@@ -1,0 +1,14 @@
+Model_name = heidel_e
+
+Resource_file  = heidel_e
+OprIev_file    = heidel_e
+Frame_file     = heidel_e
+Statistic_file = heidel_e
+Results_file   = heidel_e
+{Trace_file     = heidel_e}
+{Trace_StartTime= 3.5}
+{Trace_EndTime  = 2.0}
+Show_mode      = Animation
+Show_rate      = 1000.0
+
+Terminate_if  Cutting_machine_1.trunks_processed >= 50

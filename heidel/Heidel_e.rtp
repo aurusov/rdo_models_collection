@@ -1,0 +1,202 @@
+$Resource_type  a_trunk : temporary
+$Parameters
+  number             : integer = 0
+  length             : integer [0..2400]   { in cm }
+  diameter_b         : integer [0..720]    { in mm }  { Durchmesser }
+  diameter_e         : integer [0..720]    { in mm }
+  cubic_m            : real
+  init_length        : such_as a_trunk.length
+  init_cubic_m       : such_as a_trunk.cubic_m
+  wood_kind          : (pine, fir_tree)
+  quality            : integer [1..3]
+  status             : (nothing, measurement, splitting, splitted,
+                        ready_to_edge_cleaning, 
+                        positioning, positioned, cutting, completed)
+  place_code         : (passing,
+                        Tr_1, Tr_2, Tr_3,
+                        Cv_1, Cv_2, Cv_3, Cv_4, Cv_5,
+                        St_1,  St_2,  St_3,  St_4,  St_5,  St_6,  St_7,  St_8,
+                        St_9,  St_10, St_11, St_12, St_13, St_14, St_15, St_16,
+                        St_17, St_18, St_19, St_20, St_21, St_22, St_23, St_24,
+                        St_25, St_26, St_27, St_28, St_29, St_30)
+  lap_number         : integer
+  position           : integer  { in cm }
+  utilization_length : real
+  utilization_cm     : real
+$End
+
+$Resource_type  a_trunk_to_show : permanent
+$Parameters
+  number             : integer = 0
+  length             : such_as a_trunk.length = 0
+  place_code         : such_as a_trunk.place_code = passing
+  lap_number         : such_as a_trunk.lap_number = 0
+  position           : such_as a_trunk.position = 0
+$End
+
+$Resource_type  a_transporter : permanent
+$Parameters
+  code            : such_as a_trunk.place_code
+  speed           : real
+  cur_trunk_quant : integer
+  length          : integer { in cm }
+  counter         : integer = 0
+  status          : (forward, stoped) = stoped
+  movement        : (yes, no) = no
+  lap_count       : integer = -32767
+  position        : integer { in cm } = 0
+  gen_length      : integer = 0
+  gen_diameter    : integer = 0
+  gen_wood_kind   : such_as a_trunk.wood_kind = pine
+  gen_quality     : such_as a_trunk.quality = 1
+$End
+
+$Resource_type  a_conveyer : permanent
+$Parameters
+  code            : such_as a_trunk.place_code
+  speed           : real    { in m/min }
+  step            : integer = 25  { in cm, step 5 }
+  cur_trunk_quant : integer
+  length          : integer { in cm }
+  status          : (forward, backward, stoped) = forward
+  movement        : (yes, no) = no
+  lap_count       : integer = -32767
+  position        : integer { in cm } = 0
+$End
+
+$Resource_type  a_storage : permanent
+$Parameters
+  code            : such_as a_trunk.place_code
+  distance        : integer
+  side            : (left, right)
+  length          : real
+  depth           : real = 2.0
+  width           : real = 2.0
+  cur_trunk_quant : integer = 0
+  order_number    : integer = 0
+  position_number : integer = 0
+$End
+
+$Resource_type  a_measurement_position : permanent
+$Parameters
+  state           : (free, busy) = free
+  length          : integer = 0
+  diameter_b      : integer = 0
+  diameter_e      : integer = 0
+  cubic_m         : real = 0.0
+$End
+
+$Resource_type  an_order_position : permanent
+$Parameters
+  order_number    : integer
+  position_number : integer
+  customer_name   : (Bronstein, Schniperson, Krusenstern, M_fon_Sudoff) = Schniperson
+  quantity        : integer
+  due_date        : real
+  arrival_time    : real = 0.0
+  sizetype        : (  _60x60,   _60x80,  _60x120,  _80x80,   _80x100,
+                       _80x120, _100x100, _100x120, _120x120, _120x140,
+                      _120x160, _140x140, _140x160, _160x160, _160x180,
+                      _100x200, _100x220, _120x200, _120x240, _160x200,
+                      _180x220, _200x200, _200x240) = _60x60
+  length          : integer [50..2400] { in cm }  { Laenge }
+  width           : integer [50..300]  { in mm }  { Breite }
+  height          : integer [10..300]  { in mm }  { Hoehe }
+  volume          : real               { in cubic m }
+  wood_kind       : such_as a_trunk.wood_kind
+  class           : (S, A, B, C) = S
+  quality         : such_as a_trunk.quality
+  priority        : integer [1..10] = 1
+  ready_quant     : integer = 0
+  pieces_quant    : integer = 0
+  storage         : such_as a_trunk.place_code = passing
+  status          : (in_process, processed) = processed
+$End
+
+$Resource_type  an_order_for_statistic : temporary
+$Parameters
+  order_number    : integer
+  position_number : integer
+  due_date        : real
+  arrival_time    : real
+  quantity        : integer
+  ready_quant     : integer
+  pieces_quant    : integer
+  req_diam_1      : real
+  req_diam_2      : real
+  req_diam_3      : real
+  req_diam_4      : real
+  req_diam_6      : real
+  req_diam_8      : real
+  req_diam_9      : real
+$End
+
+$Resource_type  a_piece_of_trunk : temporary
+$Parameters
+  number          : integer = 0
+  length          : such_as a_trunk.length
+  diameter_b      : such_as a_trunk.diameter_e
+  diameter_e      : such_as a_trunk.diameter_e
+  cubic_m         : such_as a_trunk.cubic_m
+  wood_kind       : such_as a_trunk.wood_kind
+  quality         : such_as a_trunk.quality
+  place_code      : such_as a_trunk.place_code
+  position        : such_as a_trunk.position
+  lap_number      : such_as a_trunk.lap_number = 0
+  order_number    : such_as an_order_position.order_number
+  position_number : such_as an_order_position.position_number
+  storage_code    : such_as a_trunk.place_code
+  pieces_quant    : integer [0..9]
+  req_diam        : real
+  utilization     : real
+$End
+
+$Resource_type  a_cutting_machine : permanent
+$Parameters
+  state              : (free, busy) = free
+  length             : integer = 0
+  diameter_b         : integer = 0
+  diameter_e         : integer = 0
+  cubic_m            : real    = 0.0
+  pieces_quant       : integer [0..9] = 0
+  cur_piece_number   : integer [0..10] = 0
+  brutto_length      : integer = 0
+  netto_length       : integer = 0
+  brutto_cubic_m     : real    = 0.0
+  netto_cubic_m      : real    = 0.0
+  length_to_cut      : integer = 0
+  diameter_b_to_cut  : integer = 0
+  trunks_counter            : integer = -3276
+  trunks_processed          : integer = 0
+  orders_processed          : integer = 0
+  pieces_of_trunk_processed : integer = 0
+  total_trunks_length       : real = 0.0  { in meters }
+  total_rest_length         : real = 0.0  { in meters }
+  total_trunks_cubic_m      : real = 0.0
+  total_rest_cubic_m        : real = 0.0
+  total_output_cubic_m      : real = 0.0
+$End
+
+$Resource_type  a_cut_out_result : permanent
+$Parameters
+  number          : integer [1..7]
+  order_number    : such_as an_order_position.order_number = 0
+  position_number : such_as an_order_position.position_number = 0
+  customer_name   : such_as an_order_position.customer_name
+  wood_kind       : such_as a_trunk.wood_kind = pine
+  quality         : such_as an_order_position.quality = 1
+  class           : such_as an_order_position.class = S
+  length          : such_as an_order_position.length = 100
+  width           : such_as an_order_position.width = 100
+  height          : such_as an_order_position.height = 100
+  pieces_quant    : such_as a_piece_of_trunk.pieces_quant = 0
+  cur_diam        : such_as a_trunk.diameter_e = 200
+  req_diam        : real = 0.0
+  cubic_m         : such_as a_trunk.cubic_m = 0.0
+  utilization     : such_as a_piece_of_trunk.utilization = 0.0
+  storage_code    : such_as a_piece_of_trunk.storage_code = passing
+  termin          : such_as an_order_position.due_date = 0.0
+  soll            : such_as an_order_position.quantity = 0
+  lst             : such_as an_order_position.ready_quant = 0
+  accum_length    : such_as a_trunk.length = 0
+$End

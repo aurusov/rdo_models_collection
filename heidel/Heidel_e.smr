@@ -1,7 +1,6 @@
 Model_name = heidel_e
 
 Resource_file  = heidel_e
-OprIev_file    = heidel_e
 Frame_file     = heidel_e
 Statistic_file = heidel_e
 Results_file   = heidel_e

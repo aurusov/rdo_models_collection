@@ -1,7 +1,7 @@
 $Results
-  System_free         : trace  watch_state  Transporter_1.cur_trunk_quant = 0 and
-                                            Transporter_2.cur_trunk_quant = 0 and
-                                            Conveyer_1.cur_trunk_quant = 0
+  System_free         : trace  watch_state  Transporter_1.cur_trunk_quant == 0 and
+                                            Transporter_2.cur_trunk_quant == 0 and
+                                            Conveyer_1.cur_trunk_quant == 0
   Transporter_1_quant : trace  watch_par    Transporter_1.cur_trunk_quant
   Transporter_2_quant : trace  watch_par    Transporter_2.cur_trunk_quant
   Trunks_in_system    : trace  watch_quant  a_trunk  NoCheck

@@ -1,0 +1,23 @@
+$Pattern Car_arrival_pat_1  : event   trace
+$Relevant_resources
+  transporter_1 : Transporter_1  Keep
+$Body
+  transporter_1
+    Convert_event
+      Car_arrival_pat_1.planning(time_now + Input_1(Average_interval_1));
+      counter         set Get_quantity_in_car_1(15, 45);
+      gen_wood_kind   set Trunk_wood_kind;
+      gen_quality     set Trunk_quality;
+$End
+
+$Pattern Car_arrival_pat_2  : event   trace
+$Relevant_resources
+  transporter_2 : Transporter_2  Keep
+$Body
+  transporter_2
+    Convert_event
+	  Car_arrival_pat_2.planning(time_now + Input_2(Average_interval_2));
+      counter         set Get_quantity_in_car_2(20, 50);
+      gen_wood_kind   set Trunk_wood_kind;
+      gen_quality     set Trunk_quality;
+$End

@@ -1,9 +1,9 @@
 $Resource_type  a_trunk : temporary
 $Parameters
   number             : integer = 0
-  length             : integer [0..2400]   { in cm }
-  diameter_b         : integer [0..720]    { in mm }  { Durchmesser }
-  diameter_e         : integer [0..720]    { in mm }
+  length             : integer [0..2400]   /* in cm */
+  diameter_b         : integer [0..720]    /* in mm */  /* Durchmesser */
+  diameter_e         : integer [0..720]    /* in mm */
   cubic_m            : real
   init_length        : such_as a_trunk.length
   init_cubic_m       : such_as a_trunk.cubic_m
@@ -20,7 +20,7 @@ $Parameters
                         St_17, St_18, St_19, St_20, St_21, St_22, St_23, St_24,
                         St_25, St_26, St_27, St_28, St_29, St_30)
   lap_number         : integer
-  position           : integer  { in cm }
+  position           : integer  /* in cm */
   utilization_length : real
   utilization_cm     : real
 $End
@@ -39,12 +39,12 @@ $Parameters
   code            : such_as a_trunk.place_code
   speed           : real
   cur_trunk_quant : integer
-  length          : integer { in cm }
+  length          : integer /* in cm */
   counter         : integer = 0
   status          : (forward, stoped) = stoped
-  movement        : (yes, no) = no
+  movement        : (_yes, _no) = _no
   lap_count       : integer = -32767
-  position        : integer { in cm } = 0
+  position        : integer /* in cm */ = 0
   gen_length      : integer = 0
   gen_diameter    : integer = 0
   gen_wood_kind   : such_as a_trunk.wood_kind = pine
@@ -54,14 +54,14 @@ $End
 $Resource_type  a_conveyer : permanent
 $Parameters
   code            : such_as a_trunk.place_code
-  speed           : real    { in m/min }
-  step            : integer = 25  { in cm, step 5 }
+  speed           : real    /* in m/min */
+  step            : integer = 25  /* in cm, step 5 */
   cur_trunk_quant : integer
-  length          : integer { in cm }
+  length          : integer /* in cm */
   status          : (forward, backward, stoped) = forward
-  movement        : (yes, no) = no
+  movement        : (_yes, _no) = _no
   lap_count       : integer = -32767
-  position        : integer { in cm } = 0
+  position        : integer /* in cm */ = 0
 $End
 
 $Resource_type  a_storage : permanent
@@ -99,10 +99,10 @@ $Parameters
                       _120x160, _140x140, _140x160, _160x160, _160x180,
                       _100x200, _100x220, _120x200, _120x240, _160x200,
                       _180x220, _200x200, _200x240) = _60x60
-  length          : integer [50..2400] { in cm }  { Laenge }
-  width           : integer [50..300]  { in mm }  { Breite }
-  height          : integer [10..300]  { in mm }  { Hoehe }
-  volume          : real               { in cubic m }
+  length          : integer [50..2400] /* in cm */  /* Laenge */
+  width           : integer [50..300]  /* in mm */  /* Breite */
+  height          : integer [10..300]  /* in mm */  /* Hoehe */
+  volume          : real               /* in cubic m */
   wood_kind       : such_as a_trunk.wood_kind
   class           : (S, A, B, C) = S
   quality         : such_as a_trunk.quality
@@ -170,8 +170,8 @@ $Parameters
   trunks_processed          : integer = 0
   orders_processed          : integer = 0
   pieces_of_trunk_processed : integer = 0
-  total_trunks_length       : real = 0.0  { in meters }
-  total_rest_length         : real = 0.0  { in meters }
+  total_trunks_length       : real = 0.0  /* in meters */
+  total_rest_length         : real = 0.0  /* in meters */
   total_trunks_cubic_m      : real = 0.0
   total_rest_cubic_m        : real = 0.0
   total_output_cubic_m      : real = 0.0

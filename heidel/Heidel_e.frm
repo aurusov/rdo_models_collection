@@ -50,17 +50,17 @@ Show_if Transporter_1.cur_trunk_quant > 0
 Show_if Transporter_2.cur_trunk_quant > 0
   rect [350, 400, 120, Transporter_2.cur_trunk_quant, <164 106 30>, <164 106 30>]
 
-Show_if Measurement_position_1.state=free
+Show_if Measurement_position_1.state==free
   rect [315, 351, 8, 27, <0 225 0>, <0 225 0>]
   rect [315, 399, 8, 27, <0 225 0>, <0 225 0>]
-Show_if Measurement_position_1.state=busy
+Show_if Measurement_position_1.state==busy
   rect [315, 351, 8, 27, <225 0 0>, <225 0 0>]
   rect [315, 399, 8, 27, <225 0 0>, <225 0 0>]
 
-Show_if Cutting_machine_1.state=busy
+Show_if Cutting_machine_1.state==busy
   rect [173, 353, 5, 25, <225 0 0>, <225 0 0>]
   rect [173, 399, 5, 25, <225 0 0>, <225 0 0>]
-Show_if Cutting_machine_1.state=free
+Show_if Cutting_machine_1.state==free
   rect [173, 353, 5, 25, <0 225 0>, <0 0 225>]
   rect [173, 399, 5, 25, <0 225 0>, <0 0 225>]
 
@@ -184,19 +184,19 @@ Show_if Cutting_machine_1.pieces_quant > 0
   text [ Cut_out_result_1.accum_length * 0.28 - 25, 380, 60, 11, transparent, <0 0 0>, > Cut_out_result_1.cubic_m]
   text [ Cut_out_result_1.accum_length * 0.28 - 25, 400, 60, 18, transparent, <0 0 0>, > Cut_out_result_1.storage_code]
 
-Show_if Cutting_machine_1.pieces_quant > 0 and Cut_out_result_1.pieces_quant = 1
+Show_if Cutting_machine_1.pieces_quant > 0 and Cut_out_result_1.pieces_quant == 1
   bitmap [ 10+(Edge_cleaning_distance + Cut_out_result_1.length/2) * 0.28, 200, cut1, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 0 and Cut_out_result_1.pieces_quant = 2
+Show_if Cutting_machine_1.pieces_quant > 0 and Cut_out_result_1.pieces_quant == 2
   bitmap [ 10+(Edge_cleaning_distance + Cut_out_result_1.length/2) * 0.28, 200, cut2, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 0 and Cut_out_result_1.pieces_quant = 3
+Show_if Cutting_machine_1.pieces_quant > 0 and Cut_out_result_1.pieces_quant == 3
   bitmap [ 10+(Edge_cleaning_distance + Cut_out_result_1.length/2) * 0.28, 200, cut3, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 0 and Cut_out_result_1.pieces_quant = 4
+Show_if Cutting_machine_1.pieces_quant > 0 and Cut_out_result_1.pieces_quant == 4
   bitmap [ 10+(Edge_cleaning_distance + Cut_out_result_1.length/2) * 0.28, 200, cut4, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 0 and Cut_out_result_1.pieces_quant = 6
+Show_if Cutting_machine_1.pieces_quant > 0 and Cut_out_result_1.pieces_quant == 6
   bitmap [ 10+(Edge_cleaning_distance + Cut_out_result_1.length/2) * 0.28, 200, cut6, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 0 and Cut_out_result_1.pieces_quant = 8
+Show_if Cutting_machine_1.pieces_quant > 0 and Cut_out_result_1.pieces_quant == 8
   bitmap [ 10+(Edge_cleaning_distance + Cut_out_result_1.length/2) * 0.28, 200, cut8, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 0 and Cut_out_result_1.pieces_quant = 9
+Show_if Cutting_machine_1.pieces_quant > 0 and Cut_out_result_1.pieces_quant == 9
   bitmap [ 10+(Edge_cleaning_distance + Cut_out_result_1.length/2) * 0.28, 200, cut9, cut_m]
 
 Show_if Cutting_machine_1.pieces_quant > 1
@@ -210,19 +210,19 @@ Show_if Cutting_machine_1.pieces_quant > 1
   text [ Cut_out_result_2.accum_length * 0.28 - 25, 380, 60, 11, transparent, <0 0 0>, > Cut_out_result_2.cubic_m]
   text [ Cut_out_result_2.accum_length * 0.28 - 25, 400, 60, 18, transparent, <0 0 0>, > Cut_out_result_2.storage_code]
 
-Show_if Cutting_machine_1.pieces_quant > 1 and Cut_out_result_2.pieces_quant = 1
+Show_if Cutting_machine_1.pieces_quant > 1 and Cut_out_result_2.pieces_quant == 1
   bitmap [ 10+(Cut_out_result_1.accum_length + Cut_out_result_2.length/2) * 0.28, 200, cut1, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 1 and Cut_out_result_2.pieces_quant = 2
+Show_if Cutting_machine_1.pieces_quant > 1 and Cut_out_result_2.pieces_quant == 2
   bitmap [ 10+(Cut_out_result_1.accum_length + Cut_out_result_2.length/2) * 0.28, 200, cut2, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 1 and Cut_out_result_2.pieces_quant = 3
+Show_if Cutting_machine_1.pieces_quant > 1 and Cut_out_result_2.pieces_quant == 3
   bitmap [ 10+(Cut_out_result_1.accum_length + Cut_out_result_2.length/2) * 0.28, 200, cut3, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 1 and Cut_out_result_2.pieces_quant = 4
+Show_if Cutting_machine_1.pieces_quant > 1 and Cut_out_result_2.pieces_quant == 4
   bitmap [ 10+(Cut_out_result_1.accum_length + Cut_out_result_2.length/2) * 0.28, 200, cut4, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 1 and Cut_out_result_2.pieces_quant = 6
+Show_if Cutting_machine_1.pieces_quant > 1 and Cut_out_result_2.pieces_quant == 6
   bitmap [ 10+(Cut_out_result_1.accum_length + Cut_out_result_2.length/2) * 0.28, 200, cut6, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 1 and Cut_out_result_2.pieces_quant = 8
+Show_if Cutting_machine_1.pieces_quant > 1 and Cut_out_result_2.pieces_quant == 8
   bitmap [ 10+(Cut_out_result_1.accum_length + Cut_out_result_2.length/2) * 0.28, 200, cut8, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 1 and Cut_out_result_2.pieces_quant = 9
+Show_if Cutting_machine_1.pieces_quant > 1 and Cut_out_result_2.pieces_quant == 9
   bitmap [ 10+(Cut_out_result_1.accum_length + Cut_out_result_2.length/2) * 0.28, 200, cut9, cut_m]
 
 Show_if Cutting_machine_1.pieces_quant > 2
@@ -236,19 +236,19 @@ Show_if Cutting_machine_1.pieces_quant > 2
   text [ Cut_out_result_3.accum_length * 0.28 - 25, 380, 60, 11, transparent, <0 0 0>, > Cut_out_result_3.cubic_m]
   text [ Cut_out_result_3.accum_length * 0.28 - 25, 400, 60, 18, transparent, <0 0 0>, > Cut_out_result_3.storage_code]
 
-Show_if Cutting_machine_1.pieces_quant > 2 and Cut_out_result_3.pieces_quant = 1
+Show_if Cutting_machine_1.pieces_quant > 2 and Cut_out_result_3.pieces_quant == 1
   bitmap [ 10+(Cut_out_result_2.accum_length + Cut_out_result_3.length/2) * 0.28, 200, cut1, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 2 and Cut_out_result_3.pieces_quant = 2
+Show_if Cutting_machine_1.pieces_quant > 2 and Cut_out_result_3.pieces_quant == 2
   bitmap [ 10+(Cut_out_result_2.accum_length + Cut_out_result_3.length/2) * 0.28, 200, cut2, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 2 and Cut_out_result_3.pieces_quant = 3
+Show_if Cutting_machine_1.pieces_quant > 2 and Cut_out_result_3.pieces_quant == 3
   bitmap [ 10+(Cut_out_result_2.accum_length + Cut_out_result_3.length/2) * 0.28, 200, cut3, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 2 and Cut_out_result_3.pieces_quant = 4
+Show_if Cutting_machine_1.pieces_quant > 2 and Cut_out_result_3.pieces_quant == 4
   bitmap [ 10+(Cut_out_result_2.accum_length + Cut_out_result_3.length/2) * 0.28, 200, cut4, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 2 and Cut_out_result_3.pieces_quant = 6
+Show_if Cutting_machine_1.pieces_quant > 2 and Cut_out_result_3.pieces_quant == 6
   bitmap [ 10+(Cut_out_result_2.accum_length + Cut_out_result_3.length/2) * 0.28, 200, cut6, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 2 and Cut_out_result_3.pieces_quant = 8
+Show_if Cutting_machine_1.pieces_quant > 2 and Cut_out_result_3.pieces_quant == 8
   bitmap [ 10+(Cut_out_result_2.accum_length + Cut_out_result_3.length/2) * 0.28, 200, cut8, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 2 and Cut_out_result_3.pieces_quant = 9
+Show_if Cutting_machine_1.pieces_quant > 2 and Cut_out_result_3.pieces_quant == 9
   bitmap [ 10+(Cut_out_result_2.accum_length + Cut_out_result_3.length/2) * 0.28, 200, cut9, cut_m]
 
 Show_if Cutting_machine_1.pieces_quant > 3
@@ -262,19 +262,19 @@ Show_if Cutting_machine_1.pieces_quant > 3
   text [ Cut_out_result_4.accum_length * 0.28 - 25, 380, 60, 11, transparent, <0 0 0>, > Cut_out_result_4.cubic_m]
   text [ Cut_out_result_4.accum_length * 0.28 - 25, 400, 60, 18, transparent, <0 0 0>, > Cut_out_result_4.storage_code]
 
-Show_if Cutting_machine_1.pieces_quant > 3 and Cut_out_result_4.pieces_quant = 1
+Show_if Cutting_machine_1.pieces_quant > 3 and Cut_out_result_4.pieces_quant == 1
   bitmap [ 10+(Cut_out_result_3.accum_length + Cut_out_result_4.length/2) * 0.28, 200, cut1, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 3 and Cut_out_result_4.pieces_quant = 2
+Show_if Cutting_machine_1.pieces_quant > 3 and Cut_out_result_4.pieces_quant == 2
   bitmap [ 10+(Cut_out_result_3.accum_length + Cut_out_result_4.length/2) * 0.28, 200, cut2, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 3 and Cut_out_result_4.pieces_quant = 3
+Show_if Cutting_machine_1.pieces_quant > 3 and Cut_out_result_4.pieces_quant == 3
   bitmap [ 10+(Cut_out_result_3.accum_length + Cut_out_result_4.length/2) * 0.28, 200, cut3, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 3 and Cut_out_result_4.pieces_quant = 4
+Show_if Cutting_machine_1.pieces_quant > 3 and Cut_out_result_4.pieces_quant == 4
   bitmap [ 10+(Cut_out_result_3.accum_length + Cut_out_result_4.length/2) * 0.28, 200, cut4, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 3 and Cut_out_result_4.pieces_quant = 6
+Show_if Cutting_machine_1.pieces_quant > 3 and Cut_out_result_4.pieces_quant == 6
   bitmap [ 10+(Cut_out_result_3.accum_length + Cut_out_result_4.length/2) * 0.28, 200, cut6, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 3 and Cut_out_result_4.pieces_quant = 8
+Show_if Cutting_machine_1.pieces_quant > 3 and Cut_out_result_4.pieces_quant == 8
   bitmap [ 10+(Cut_out_result_3.accum_length + Cut_out_result_4.length/2) * 0.28, 200, cut8, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 3 and Cut_out_result_4.pieces_quant = 9
+Show_if Cutting_machine_1.pieces_quant > 3 and Cut_out_result_4.pieces_quant == 9
   bitmap [ 10+(Cut_out_result_3.accum_length + Cut_out_result_4.length/2) * 0.28, 200, cut9, cut_m]
 
 Show_if Cutting_machine_1.pieces_quant > 4
@@ -288,19 +288,19 @@ Show_if Cutting_machine_1.pieces_quant > 4
   text [ Cut_out_result_5.accum_length * 0.28 - 25, 380, 60, 11, transparent, <0 0 0>, > Cut_out_result_5.cubic_m]
   text [ Cut_out_result_5.accum_length * 0.28 - 25, 400, 60, 18, transparent, <0 0 0>, > Cut_out_result_5.storage_code]
 
-Show_if Cutting_machine_1.pieces_quant > 4 and Cut_out_result_5.pieces_quant = 1
+Show_if Cutting_machine_1.pieces_quant > 4 and Cut_out_result_5.pieces_quant == 1
   bitmap [ 10+(Cut_out_result_4.accum_length + Cut_out_result_5.length/2) * 0.28, 200, cut1, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 4 and Cut_out_result_5.pieces_quant = 2
+Show_if Cutting_machine_1.pieces_quant > 4 and Cut_out_result_5.pieces_quant == 2
   bitmap [ 10+(Cut_out_result_4.accum_length + Cut_out_result_5.length/2) * 0.28, 200, cut2, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 4 and Cut_out_result_5.pieces_quant = 3
+Show_if Cutting_machine_1.pieces_quant > 4 and Cut_out_result_5.pieces_quant == 3
   bitmap [ 10+(Cut_out_result_4.accum_length + Cut_out_result_5.length/2) * 0.28, 200, cut3, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 4 and Cut_out_result_5.pieces_quant = 4
+Show_if Cutting_machine_1.pieces_quant > 4 and Cut_out_result_5.pieces_quant == 4
   bitmap [ 10+(Cut_out_result_4.accum_length + Cut_out_result_5.length/2) * 0.28, 200, cut4, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 4 and Cut_out_result_5.pieces_quant = 6
+Show_if Cutting_machine_1.pieces_quant > 4 and Cut_out_result_5.pieces_quant == 6
   bitmap [ 10+(Cut_out_result_4.accum_length + Cut_out_result_5.length/2) * 0.28, 200, cut6, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 4 and Cut_out_result_5.pieces_quant = 8
+Show_if Cutting_machine_1.pieces_quant > 4 and Cut_out_result_5.pieces_quant == 8
   bitmap [ 10+(Cut_out_result_4.accum_length + Cut_out_result_5.length/2) * 0.28, 200, cut8, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 4 and Cut_out_result_5.pieces_quant = 9
+Show_if Cutting_machine_1.pieces_quant > 4 and Cut_out_result_5.pieces_quant == 9
   bitmap [ 10+(Cut_out_result_4.accum_length + Cut_out_result_5.length/2) * 0.28, 200, cut9, cut_m]
 
 Show_if Cutting_machine_1.pieces_quant > 5
@@ -314,19 +314,19 @@ Show_if Cutting_machine_1.pieces_quant > 5
   text [ Cut_out_result_6.accum_length * 0.28 - 25, 380, 60, 11, transparent, <0 0 0>, > Cut_out_result_6.cubic_m]
   text [ Cut_out_result_6.accum_length * 0.28 - 25, 400, 60, 18, transparent, <0 0 0>, > Cut_out_result_6.storage_code]
 
-Show_if Cutting_machine_1.pieces_quant > 5 and Cut_out_result_6.pieces_quant = 1
+Show_if Cutting_machine_1.pieces_quant > 5 and Cut_out_result_6.pieces_quant == 1
   bitmap [ 10+(Cut_out_result_5.accum_length + Cut_out_result_6.length/2) * 0.28, 200, cut1, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 5 and Cut_out_result_6.pieces_quant = 2
+Show_if Cutting_machine_1.pieces_quant > 5 and Cut_out_result_6.pieces_quant == 2
   bitmap [ 10+(Cut_out_result_5.accum_length + Cut_out_result_6.length/2) * 0.28, 200, cut2, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 5 and Cut_out_result_6.pieces_quant = 3
+Show_if Cutting_machine_1.pieces_quant > 5 and Cut_out_result_6.pieces_quant == 3
   bitmap [ 10+(Cut_out_result_5.accum_length + Cut_out_result_6.length/2) * 0.28, 200, cut3, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 5 and Cut_out_result_6.pieces_quant = 4
+Show_if Cutting_machine_1.pieces_quant > 5 and Cut_out_result_6.pieces_quant == 4
   bitmap [ 10+(Cut_out_result_5.accum_length + Cut_out_result_6.length/2) * 0.28, 200, cut4, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 5 and Cut_out_result_6.pieces_quant = 6
+Show_if Cutting_machine_1.pieces_quant > 5 and Cut_out_result_6.pieces_quant == 6
   bitmap [ 10+(Cut_out_result_5.accum_length + Cut_out_result_6.length/2) * 0.28, 200, cut6, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 5 and Cut_out_result_6.pieces_quant = 8
+Show_if Cutting_machine_1.pieces_quant > 5 and Cut_out_result_6.pieces_quant == 8
   bitmap [ 10+(Cut_out_result_5.accum_length + Cut_out_result_6.length/2) * 0.28, 200, cut8, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 5 and Cut_out_result_6.pieces_quant = 9
+Show_if Cutting_machine_1.pieces_quant > 5 and Cut_out_result_6.pieces_quant == 9
   bitmap [ 10+(Cut_out_result_5.accum_length + Cut_out_result_6.length/2) * 0.28, 200, cut9, cut_m]
 
 Show_if Cutting_machine_1.pieces_quant > 6
@@ -340,19 +340,19 @@ Show_if Cutting_machine_1.pieces_quant > 6
   text [ Cut_out_result_7.accum_length * 0.28 - 25, 380, 60, 11, transparent, <0 0 0>, > Cut_out_result_7.cubic_m]
   text [ Cut_out_result_7.accum_length * 0.28 - 25, 400, 60, 18, transparent, <0 0 0>, > Cut_out_result_7.storage_code]
 
-Show_if Cutting_machine_1.pieces_quant > 6 and Cut_out_result_7.pieces_quant = 1
+Show_if Cutting_machine_1.pieces_quant > 6 and Cut_out_result_7.pieces_quant == 1
   bitmap [ 10+(Cut_out_result_6.accum_length + Cut_out_result_7.length/2) * 0.28, 200, cut1, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 6 and Cut_out_result_7.pieces_quant = 2
+Show_if Cutting_machine_1.pieces_quant > 6 and Cut_out_result_7.pieces_quant == 2
   bitmap [ 10+(Cut_out_result_6.accum_length + Cut_out_result_7.length/2) * 0.28, 200, cut2, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 6 and Cut_out_result_7.pieces_quant = 3
+Show_if Cutting_machine_1.pieces_quant > 6 and Cut_out_result_7.pieces_quant == 3
   bitmap [ 10+(Cut_out_result_6.accum_length + Cut_out_result_7.length/2) * 0.28, 200, cut3, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 6 and Cut_out_result_7.pieces_quant = 4
+Show_if Cutting_machine_1.pieces_quant > 6 and Cut_out_result_7.pieces_quant == 4
   bitmap [ 10+(Cut_out_result_6.accum_length + Cut_out_result_7.length/2) * 0.28, 200, cut4, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 6 and Cut_out_result_7.pieces_quant = 6
+Show_if Cutting_machine_1.pieces_quant > 6 and Cut_out_result_7.pieces_quant == 6
   bitmap [ 10+(Cut_out_result_6.accum_length + Cut_out_result_7.length/2) * 0.28, 200, cut6, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 6 and Cut_out_result_7.pieces_quant = 8
+Show_if Cutting_machine_1.pieces_quant > 6 and Cut_out_result_7.pieces_quant == 8
   bitmap [ 10+(Cut_out_result_6.accum_length + Cut_out_result_7.length/2) * 0.28, 200, cut8, cut_m]
-Show_if Cutting_machine_1.pieces_quant > 6 and Cut_out_result_7.pieces_quant = 9
+Show_if Cutting_machine_1.pieces_quant > 6 and Cut_out_result_7.pieces_quant == 9
   bitmap [ 10+(Cut_out_result_6.accum_length + Cut_out_result_7.length/2) * 0.28, 200, cut9, cut_m]
 
 $End
@@ -375,7 +375,7 @@ Show_if Cutting_machine_1.pieces_quant > 0 and Cutting_machine_1.cur_piece_numbe
   text [650, 106,  50, 18, transparent, <0 0 0>, < Cut_out_result_1.storage_code]
   text [710, 106,  70, 11, transparent, <0 0 0>, < Cut_out_result_1.cubic_m]
 
-Show_if Cutting_machine_1.pieces_quant > 0 and Cutting_machine_1.cur_piece_number = 1
+Show_if Cutting_machine_1.pieces_quant > 0 and Cutting_machine_1.cur_piece_number == 1
   text [ 10, 106,  20, 18, <0 0 222>, <255 255 255>, < 'A1']
   text [ 40, 106,  90, 18,  <0 0 222>, <255 255 255>, < Cut_out_result_1.customer_name]
   text [150, 106,  20, 18,  <0 0 222>, <255 255 255>, = Cut_out_result_1.order_number]
@@ -414,7 +414,7 @@ Show_if Cutting_machine_1.pieces_quant > 1 and Cutting_machine_1.cur_piece_numbe
   text [650, 126,  50, 18, transparent, <0 0 0>, < Cut_out_result_2.storage_code]
   text [710, 126,  70, 11, transparent, <0 0 0>, < Cut_out_result_2.cubic_m]
 
-Show_if Cutting_machine_1.pieces_quant > 1 and Cutting_machine_1.cur_piece_number = 2
+Show_if Cutting_machine_1.pieces_quant > 1 and Cutting_machine_1.cur_piece_number == 2
   text [ 10, 126,  20, 18, <0 0 222>, <255 255 255>, < 'A2']
   text [ 40, 126,  90, 18, <0 0 222>, <255 255 255>, < Cut_out_result_2.customer_name]
   text [150, 126,  20, 18, <0 0 222>, <255 255 255>, = Cut_out_result_2.order_number]
@@ -454,7 +454,7 @@ Show_if Cutting_machine_1.pieces_quant > 2 and Cutting_machine_1.cur_piece_numbe
   text [650, 146,  50, 18, transparent, <0 0 0>, < Cut_out_result_3.storage_code]
   text [710, 146,  70, 11, transparent, <0 0 0>, < Cut_out_result_3.cubic_m]
 
-Show_if Cutting_machine_1.pieces_quant > 2 and Cutting_machine_1.cur_piece_number = 3
+Show_if Cutting_machine_1.pieces_quant > 2 and Cutting_machine_1.cur_piece_number == 3
   text [ 10, 146,  20, 18, <0 0 222>, <255 255 255>, < 'A3']
   text [ 40, 146,  90, 18, <0 0 222>, <255 255 255>, < Cut_out_result_3.customer_name]
   text [150, 146,  20, 18, <0 0 222>, <255 255 255>, = Cut_out_result_3.order_number]
@@ -493,7 +493,7 @@ Show_if Cutting_machine_1.pieces_quant > 3 and Cutting_machine_1.cur_piece_numbe
   text [650, 166,  50, 18, transparent, <0 0 0>, < Cut_out_result_4.storage_code]
   text [710, 166,  70, 11, transparent, <0 0 0>, < Cut_out_result_4.cubic_m]
 
-Show_if Cutting_machine_1.pieces_quant > 3 and Cutting_machine_1.cur_piece_number = 4
+Show_if Cutting_machine_1.pieces_quant > 3 and Cutting_machine_1.cur_piece_number == 4
   text [ 10, 166,  20, 18, <0 0 222>, <255 255 255>, < 'A4']
   text [ 40, 166,  90, 18, <0 0 222>, <255 255 255>, < Cut_out_result_4.customer_name]
   text [150, 166,  20, 18, <0 0 222>, <255 255 255>, = Cut_out_result_4.order_number]
@@ -532,7 +532,7 @@ Show_if Cutting_machine_1.pieces_quant > 4 and Cutting_machine_1.cur_piece_numbe
   text [650, 186,  50, 18, transparent, <0 0 0>, < Cut_out_result_5.storage_code]
   text [710, 186,  70, 11, transparent, <0 0 0>, < Cut_out_result_5.cubic_m]
 
-Show_if Cutting_machine_1.pieces_quant > 4 and Cutting_machine_1.cur_piece_number = 5
+Show_if Cutting_machine_1.pieces_quant > 4 and Cutting_machine_1.cur_piece_number == 5
   text [ 10, 186,  20, 18, <0 0 222>, <255 255 255>, < 'A5']
   text [ 40, 186,  90, 18, <0 0 222>, <255 255 255>, < Cut_out_result_5.customer_name]
   text [150, 186,  20, 18, <0 0 222>, <255 255 255>, = Cut_out_result_5.order_number]
@@ -571,7 +571,7 @@ Show_if Cutting_machine_1.pieces_quant > 5 and Cutting_machine_1.cur_piece_numbe
   text [650, 206,  50, 18, transparent, <0 0 0>, < Cut_out_result_6.storage_code]
   text [710, 206,  70, 11, transparent, <0 0 0>, < Cut_out_result_6.cubic_m]
 
-Show_if Cutting_machine_1.pieces_quant > 5 and Cutting_machine_1.cur_piece_number = 6
+Show_if Cutting_machine_1.pieces_quant > 5 and Cutting_machine_1.cur_piece_number == 6
   text [ 10, 206,  20, 18, <0 0 222>, <255 255 255>, < 'A6']
   text [ 40, 206,  90, 18, <0 0 222>, <255 255 255>, < Cut_out_result_6.customer_name]
   text [150, 206,  20, 18, <0 0 222>, <255 255 255>, = Cut_out_result_6.order_number]
@@ -610,7 +610,7 @@ Show_if Cutting_machine_1.pieces_quant > 6 and Cutting_machine_1.cur_piece_numbe
   text [650, 226,  50, 18, transparent, <0 0 0>, < Cut_out_result_7.storage_code]
   text [710, 226,  70, 11, transparent, <0 0 0>, < Cut_out_result_7.cubic_m]
 
-Show_if Cutting_machine_1.pieces_quant > 6 and Cutting_machine_1.cur_piece_number = 7
+Show_if Cutting_machine_1.pieces_quant > 6 and Cutting_machine_1.cur_piece_number == 7
   text [ 10, 226,  20, 18, <0 0 222>, <255 255 255>, < 'A7']
   text [ 40, 226,  90, 18, <0 0 222>, <255 255 255>, < Cut_out_result_7.customer_name]
   text [150, 226,  20, 18, <0 0 222>, <255 255 255>, = Cut_out_result_7.order_number]
@@ -837,67 +837,67 @@ Show
  text [690, 406,  50, 15, transparent, <0 0 0>, > Order_16.volume]
 
 
-  Show_if Order_1.ready_quant = 0 or Order_1.ready_quant <> Order_1.quantity
+  Show_if Order_1.ready_quant == 0 or Order_1.ready_quant <> Order_1.quantity
  text  [530, 106,  40, 19, transparent, <0 0 0>, = Order_1.ready_quant]
 Show_if Order_1.ready_quant <> 0 and Order_1.ready_quant >= Order_1.quantity
  text  [530, 106,  50, 20,  <255 0 0>, <255 255 255>, = 'ready']
-Show_if Order_2.ready_quant = 0 or Order_2.ready_quant <> Order_2.quantity
+Show_if Order_2.ready_quant == 0 or Order_2.ready_quant <> Order_2.quantity
  text  [530, 126,  40, 19, transparent, <0 0 0>, = Order_2.ready_quant]
 Show_if Order_2.ready_quant <> 0 and Order_2.ready_quant >= Order_2.quantity
  text  [530, 126,  50, 20, <255 0 0>, <255 255 255>, = 'ready']
-Show_if Order_3.ready_quant = 0 or Order_3.ready_quant <> Order_3.quantity
+Show_if Order_3.ready_quant == 0 or Order_3.ready_quant <> Order_3.quantity
  text  [530, 146,  40, 19, transparent, <0 0 0>, = Order_3.ready_quant]
 Show_if Order_3.ready_quant <> 0 and Order_3.ready_quant >= Order_3.quantity
  text  [530, 146,  50, 20, <255 0 0>, <255 255 255>, = 'ready']
-Show_if Order_4.ready_quant = 0 or Order_4.ready_quant <> Order_4.quantity
+Show_if Order_4.ready_quant == 0 or Order_4.ready_quant <> Order_4.quantity
  text  [530, 166,  40, 19, transparent, <0 0 0>, = Order_4.ready_quant]
 Show_if Order_4.ready_quant <> 0 and Order_4.ready_quant >= Order_4.quantity
  text  [530, 166,  50, 20, <255 0 0>, <255 255 255>, = 'ready']
-Show_if Order_5.ready_quant = 0 or Order_5.ready_quant <> Order_5.quantity
+Show_if Order_5.ready_quant == 0 or Order_5.ready_quant <> Order_5.quantity
   text [530, 186,  40, 19, transparent, <0 0 0>, = Order_5.ready_quant]
 Show_if Order_5.ready_quant <> 0 and Order_5.ready_quant >= Order_5.quantity
  text  [530, 186,  50, 20, <255 0 0>, <255 255 255>, = 'ready']
-Show_if Order_6.ready_quant = 0 or Order_6.ready_quant <> Order_6.quantity
+Show_if Order_6.ready_quant == 0 or Order_6.ready_quant <> Order_6.quantity
  text  [530, 206,  40, 19, transparent, <0 0 0>, = Order_6.ready_quant]
 Show_if Order_6.ready_quant <> 0 and Order_6.ready_quant >= Order_6.quantity
  text  [530, 206,  50, 20, <255 0 0>, <255 255 255>, = 'ready']
-Show_if Order_7.ready_quant = 0 or Order_7.ready_quant <> Order_7.quantity
+Show_if Order_7.ready_quant == 0 or Order_7.ready_quant <> Order_7.quantity
  text  [530, 226,  40, 19, transparent, <0 0 0>, = Order_7.ready_quant]
 Show_if Order_7.ready_quant <> 0 and Order_7.ready_quant >= Order_7.quantity
  text  [530, 226,  50, 20, <255 0 0>, <255 255 255>, = 'ready']
-Show_if Order_8.ready_quant = 0 or Order_8.ready_quant <> Order_8.quantity
+Show_if Order_8.ready_quant == 0 or Order_8.ready_quant <> Order_8.quantity
  text  [530, 246,  40, 19, transparent, <0 0 0>, = Order_8.ready_quant]
 Show_if Order_8.ready_quant <> 0 and Order_8.ready_quant >= Order_8.quantity
  text  [530, 246,  50, 20, <255 0 0>, <255 255 255>, = 'ready']
-Show_if Order_9.ready_quant = 0 or Order_9.ready_quant <> Order_9.quantity
+Show_if Order_9.ready_quant == 0 or Order_9.ready_quant <> Order_9.quantity
  text  [530, 266,  40, 19, transparent, <0 0 0>, = Order_9.ready_quant]
 Show_if Order_9.ready_quant <> 0 and Order_9.ready_quant >= Order_9.quantity
  text  [530, 266,  50, 20, <255 0 0>, <255 255 255>, = 'ready']
-Show_if Order_10.ready_quant = 0 or Order_10.ready_quant <> Order_10.quantity
+Show_if Order_10.ready_quant == 0 or Order_10.ready_quant <> Order_10.quantity
   text [530, 286,  40, 19, transparent, <0 0 0>, = Order_10.ready_quant]
 Show_if Order_10.ready_quant <> 0 and Order_10.ready_quant >= Order_10.quantity
  text  [530, 286,  50, 20, <255 0 0>, <255 255 255>, = 'ready']
-Show_if Order_11.ready_quant = 0 or Order_11.ready_quant <> Order_11.quantity
+Show_if Order_11.ready_quant == 0 or Order_11.ready_quant <> Order_11.quantity
  text  [530, 306,  40, 19, transparent, <0 0 0>, = Order_11.ready_quant]
 Show_if Order_11.ready_quant <> 0 and Order_11.ready_quant >= Order_11.quantity
  text  [530, 306, 50, 20, <255 0 0>, <255 255 255> , = 'ready']
-Show_if Order_12.ready_quant = 0 or Order_12.ready_quant <> Order_12.quantity
+Show_if Order_12.ready_quant == 0 or Order_12.ready_quant <> Order_12.quantity
  text  [530, 326,  40, 19, transparent, <0 0 0>, = Order_12.ready_quant]
 Show_if Order_12.ready_quant <> 0 and Order_12.ready_quant >= Order_12.quantity
  text  [530, 326,  50, 20, <255 0 0>, <255 255 255>, = 'ready']
-Show_if Order_13.ready_quant = 0 or Order_13.ready_quant <> Order_13.quantity
+Show_if Order_13.ready_quant == 0 or Order_13.ready_quant <> Order_13.quantity
   text [530, 346,  40, 19, transparent, <0 0 0>, = Order_13.ready_quant]
 Show_if Order_13.ready_quant <> 0 and Order_13.ready_quant >= Order_13.quantity
 text   [530, 346,  50, 20, <255 0 0>, <255 255 255>, = 'ready']
-Show_if Order_14.ready_quant = 0 or Order_14.ready_quant <> Order_14.quantity
+Show_if Order_14.ready_quant == 0 or Order_14.ready_quant <> Order_14.quantity
  text  [530, 366,  40, 19, transparent, <0 0 0>, = Order_14.ready_quant]
 Show_if Order_14.ready_quant <> 0 and Order_14.ready_quant >= Order_14.quantity
  text  [530, 366, 50, 20, <255 0 0>, <255 255 255> , ='ready']
-Show_if Order_15.ready_quant = 0 or Order_15.ready_quant <> Order_15.quantity
+Show_if Order_15.ready_quant == 0 or Order_15.ready_quant <> Order_15.quantity
  text  [530, 386,  40, 19, transparent, <0 0 0>, = Order_15.ready_quant]
 Show_if Order_15.ready_quant <> 0 and Order_15.ready_quant >= Order_15.quantity
  text  [530, 386,  50, 20, <255 0 0>, <255 255 255>, = 'ready']
-Show_if Order_16.ready_quant = 0 or Order_16.ready_quant <> Order_16.quantity
+Show_if Order_16.ready_quant == 0 or Order_16.ready_quant <> Order_16.quantity
  text  [530, 406,  40, 19, transparent, <0 0 0>, = Order_16.ready_quant]
 Show_if Order_16.ready_quant <> 0 and Order_16.ready_quant >= Order_16.quantity
  text  [530, 406,  50, 20, <255 0 0>, <255 255 255>, = 'ready']    

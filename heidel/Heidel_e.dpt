@@ -1,8 +1,6 @@
 $Decision_point model: some
 $Condition NoCheck
 $Activities
-  Car_arrival_1                 : Car_arrival_pat_1
-  Car_arrival_2                 : Car_arrival_pat_2
   Trunks_generation             : Trunks_generation_pat
   Orders_arrival                : Orders_arrival_pat
   Storage_allocation            : Storage_allocation_pat

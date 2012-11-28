@@ -1,0 +1,17 @@
+Results_file   = game5.pmv    Thu Nov 29 03:08:18 2012
+Run_file       = game5.smr
+Model_name     = game5
+Resource_file  = game5.rss
+OprIev_file    = game5.opr
+
+$Changes
+
+
+$Status = NO_MORE_EVENTS
+$Result_values  0  0  0.06
+  EventCount           0  -1.#IND  0
+  OperRuleCheckCounter 0  -1.#IND  0
+  AExpCalcCounter      148  1.#INF  2466
+  BExpCalcCounter      404  1.#INF  6733
+
+

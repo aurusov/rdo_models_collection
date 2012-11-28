@@ -1,0 +1,10 @@
+$Resource_type Фишка : permanent
+$Parameters
+  Номер: integer[1..5]
+  Местоположение: integer[1..6]
+$End
+
+$Resource_type Дырка_t : permanent
+$Parameters
+  Место: integer[1..6]
+$End

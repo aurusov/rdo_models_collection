@@ -1,9 +1,7 @@
 //SpriteModel на защиту
 $Sprite StrelokInfo()//$Sprite StrelokInfo(integer R, integer num, Стрелки Strelok)	
-	integer R=100;//-
-	integer num=10;//-
-	integer center=2*R + 30;
-	integer step=R*2/num;
+	integer center = 2*R + 30;
+	integer step = R*2/num;
 	
 	for (integer i=0;i<num/2;i++)
 	{
@@ -56,10 +54,8 @@ $Frame Petr_frame
 $Back_picture = <23, 124, 253> 1148 480
 //начало спрайта
 //sprite StrelokInfo()//sprite StrelokInfo(100,10,Петр)
-	integer R=100;	
-	integer num=10;
-	integer center=2*R + 30;
-	integer step=R*2/num;
+	integer center =2*R + 30;
+	integer step = R*2/num;
 	
 	for (integer i=0;i<num/2;i++)
 	{
@@ -104,17 +100,46 @@ $Back_picture = <23, 124, 253> 1148 480
 	text (550,200,140,30,transparent,black,= 'Сумма');
 	rect (690,200,70,30,transparent,black);
 //конец спрайта
-		//rect (550,110,70,30,transparent,black);
-		//rect (620,110,70,30,transparent,black);
-		//rect (690,110,70,30,transparent,black);	
+
+		text (550,110,70,30,transparent,black,= Петр.Бросок_1_m);
+		text (620,110,70,30,transparent,black,= Петр.Бросок_2_m);
+		text (690,110,70,30,transparent,black,= Петр.Бросок_3_m);	
+		text (690,170,70,30,transparent,black,= Петр.Среднее);
+		text (690,140,70,30,transparent,black,= Петр.Максимальное);
+		text (690,200,70,30,transparent,black,= Петр.Сумма);
+		circle (center + Петр.Бросок_1_r*Cos(Петр.Бросок_1_f),center + Петр.Бросок_1_r*Sin(Петр.Бросок_1_f),5,black,black);
+		circle (center + Петр.Бросок_2_r*Cos(Петр.Бросок_2_f),center + Петр.Бросок_2_r*Sin(Петр.Бросок_2_f),5,black,black);
+		circle (center + Петр.Бросок_3_r*Cos(Петр.Бросок_3_f),center + Петр.Бросок_3_r*Sin(Петр.Бросок_3_f),5,black,black);
 $End
 
 $Frame Ivan_frame 
 $Back_picture = <58, 204, 147> 1148 480
 //sprite StrelokInfo()
+		integer center = 2*R + 30;
+		integer step = R*2/num;
+		text (550,110,70,30,transparent,black,= Иван.Бросок_1_m);
+		text (620,110,70,30,transparent,black,= Иван.Бросок_2_m);
+		text (690,110,70,30,transparent,black,= Иван.Бросок_3_m);	
+		text (690,170,70,30,transparent,black,= Иван.Среднее);
+		text (690,140,70,30,transparent,black,= Иван.Максимальное);
+		text (690,200,70,30,transparent,black,= Иван.Сумма);
+		circle (center + Иван.Бросок_1_r*Cos(Иван.Бросок_1_f),center + Иван.Бросок_1_r*Sin(Иван.Бросок_1_f),5,black,black);
+		circle (center + Иван.Бросок_2_r*Cos(Иван.Бросок_2_f),center + Иван.Бросок_2_r*Sin(Иван.Бросок_2_f),5,black,black);
+		circle (center + Иван.Бросок_3_r*Cos(Иван.Бросок_3_f),center + Иван.Бросок_3_r*Sin(Иван.Бросок_3_f),5,black,black);
 $End
 
 $Frame Stepan_frame 
 $Back_picture = <213, 187, 66> 1148 480
 //sprite StrelokInfo()
+		integer center = 2*R + 30;
+		integer step = R*2/num;
+		text (550,110,70,30,transparent,black,= Степан.Бросок_1_m);
+		text (620,110,70,30,transparent,black,= Степан.Бросок_2_m);
+		text (690,110,70,30,transparent,black,= Степан.Бросок_3_m);	
+		text (690,170,70,30,transparent,black,= Степан.Среднее);
+		text (690,140,70,30,transparent,black,= Степан.Максимальное);
+		text (690,200,70,30,transparent,black,= Степан.Сумма);
+		circle (center + Степан.Бросок_1_r*Cos(Степан.Бросок_1_f),center + Степан.Бросок_1_r*Sin(Степан.Бросок_1_f),5,black,black);
+		circle (center + Степан.Бросок_2_r*Cos(Степан.Бросок_2_f),center + Степан.Бросок_2_r*Sin(Степан.Бросок_2_f),5,black,black);
+		circle (center + Степан.Бросок_3_r*Cos(Степан.Бросок_3_f),center + Степан.Бросок_3_r*Sin(Степан.Бросок_3_f),5,black,black);
 $End

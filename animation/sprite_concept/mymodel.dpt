@@ -1,5 +1,5 @@
 $Decision_point model: some
 $Condition NoCheck
 $Activities
-	Обслуживание_клиента: Образец_обслуживания_клиента
+	Подсчет: Образец_подсчета
 $End

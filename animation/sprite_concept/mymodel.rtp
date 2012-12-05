@@ -17,3 +17,19 @@ $Parameters
 	длительность_max      : integer
 	тип_клиента           : such_as Клиенты.тип
 $End
+
+$Resource_type Стрелки: permanent
+$Parameters
+	Бросок_1_r : integer
+	Бросок_1_f : real
+	Бросок_1_m : integer
+	Бросок_2_r : integer
+	Бросок_2_f : real
+	Бросок_2_m : integer
+	Бросок_3_r : integer
+	Бросок_3_f : real
+	Бросок_3_m : integer
+	Среднее  : real
+	Максимальное : integer
+	Сумма : integer
+$End

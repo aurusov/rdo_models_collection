@@ -1,4 +1,4 @@
-$Resource_type Тиры: permanent//Парикмахерские
+$Resource_type Тиры: permanent
 $Parameters
 	Возможность_стрелять: integer
 $End

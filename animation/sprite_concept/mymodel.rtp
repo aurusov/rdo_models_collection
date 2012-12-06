@@ -1,21 +1,6 @@
-$Resource_type Парикмахерские: permanent
+$Resource_type Тиры: permanent//Парикмахерские
 $Parameters
-	количество_в_очереди: integer
-$End
-
-$Resource_type Клиенты : temporary
-$Parameters
-	тип      : ( Мальчик, Девочка )
-	состояние: ( Пришел, Начал_стрижку )
-$End
-
-$Resource_type Парикмахеры: permanent
-$Parameters
-	состояние_парикмахера : ( Свободен, Занят ) = Свободен
-	количество_обслуженных: integer
-	длительность_min      : integer
-	длительность_max      : integer
-	тип_клиента           : such_as Клиенты.тип
+	Возможность_стрелять: integer
 $End
 
 $Resource_type Стрелки: permanent
@@ -32,4 +17,18 @@ $Parameters
 	Среднее  : real
 	Максимальное : integer
 	Сумма : integer
+	количестов_попыток : integer
+	состояние_cтрелка : ( Стреляет, Ожидает ) = Ожидает
 $End
+
+$Resource_type Стрелы: temporary
+$Parameters
+	Состояние	: ( Используется, Не_используется )
+	Стрела_1_r  : integer
+	Стрела_1_f  : real
+	Стрела_2_r  : integer
+	Стрела_2_f  : real
+	Стрела_3_r  : integer
+	Стрела_3_f  : real
+$End
+

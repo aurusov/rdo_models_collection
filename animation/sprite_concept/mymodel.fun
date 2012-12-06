@@ -1,5 +1,5 @@
 $Constant
-	R   : integer = 100
+	R : integer = 100
 	num : integer = 10
 $End
 
@@ -11,17 +11,11 @@ $Sequence rndr : real
 $Type = uniform 123456789
 $End
 
-$Sequence Интервал_прихода : real
+$Sequence Интервал_подготовки : real
 $Type = exponential 123456789
 $End
 
-$Sequence Длительность_обслуживания : real
+$Sequence Длительность_стрельбы : real
 $Type = uniform 123456789
 $End
 
-$Sequence Тип_клиента : such_as Клиенты.тип
-$Type = by_hist 123456789
-$Body
-	Мальчик 1.0
-	Девочка 5.0
-$End

@@ -1,0 +1,16 @@
+Results_file   = barzha.pmv    2012-Dec-06 23:54:28.654427
+Run_file       = barzha.smr
+Model_name     = barzha
+Resource_file  = barzha.rss
+
+$Changes
+
+
+$Status = USER_BREAK
+$Result_values  0  162.746  32.14
+  EventCount           51  0.313372  1
+  OperRuleCheckCounter 214  1.31493  6
+  AExpCalcCounter      383661  2357.42  11937
+  BExpCalcCounter      41337  253.997  1286
+
+

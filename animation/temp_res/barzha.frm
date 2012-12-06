@@ -1,5 +1,5 @@
 $Frame Frame1
-$Back_picture = < 245 255 255 > 608 464
+$Back_picture = white 608 464
 
 integer i,j;
 

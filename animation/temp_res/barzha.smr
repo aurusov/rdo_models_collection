@@ -1,7 +1,7 @@
 Show_mode       = Animation
 Frame_number    = 1
-Show_rate       = 12200.0
+Show_rate       = 8000.0
 
-Заказ_на_контейнер.planning( time_now + Интервал_прихода( 5 ) )
+Заказ_на_контейнер.planning( time_now + 4 )
 
-Terminate_if Time_now >= 12 * 7 * 60000
+Terminate_if Time_now >= 12 * 7 * 6000

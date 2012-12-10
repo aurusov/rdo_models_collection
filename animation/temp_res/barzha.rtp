@@ -7,6 +7,7 @@ $Parameters
 	грузится_контейнеров  : integer
 	количество_плаваний   : integer
 	расходы_на_топливо    : integer
+	доход_на_контейнер    : real
 $End
 
 $Resource_type Контейнеры : temporary

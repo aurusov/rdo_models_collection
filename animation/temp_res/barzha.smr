@@ -2,6 +2,6 @@ Show_mode       = Animation
 Frame_number    = 1
 Show_rate       = 8000.0
 
-Заказ_на_контейнер.planning( time_now + 4 )
+Р—Р°РєР°Р·_РЅР°_РєРѕРЅС‚РµР№РЅРµСЂ.planning( time_now + 4 )
 
 Terminate_if Time_now >= 12 * 7 * 6000

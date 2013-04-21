@@ -1,17 +1,17 @@
 $Decision_point load : some
 $Condition NoCheck
 $Activities
-	Погрузка : Образец_погрузки
+	РџРѕРіСЂСѓР·РєР° : РћР±СЂР°Р·РµС†_РїРѕРіСЂСѓР·РєРё
 $End
 
 $Decision_point sail : some
 $Condition NoCheck
 $Activities
-	Плавание : Образец_плавания
+	РџР»Р°РІР°РЅРёРµ : РћР±СЂР°Р·РµС†_РїР»Р°РІР°РЅРёСЏ
 $End
 
 $Decision_point unload : some
 $Condition NoCheck
 $Activities
-	Разгрузка : Образец_разгрузки
+	Р Р°Р·РіСЂСѓР·РєР° : РћР±СЂР°Р·РµС†_СЂР°Р·РіСЂСѓР·РєРё
 $End

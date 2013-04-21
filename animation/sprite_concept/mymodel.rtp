@@ -1,34 +1,34 @@
-$Resource_type Тиры: permanent
+$Resource_type РўРёСЂС‹: permanent
 $Parameters
-	Возможность_стрелять: integer
+	Р’РѕР·РјРѕР¶РЅРѕСЃС‚СЊ_СЃС‚СЂРµР»СЏС‚СЊ: integer
 $End
 
-$Resource_type Стрелки: permanent
+$Resource_type РЎС‚СЂРµР»РєРё: permanent
 $Parameters
-	Бросок_1_r : integer
-	Бросок_1_f : real
-	Бросок_1_m : integer
-	Бросок_2_r : integer
-	Бросок_2_f : real
-	Бросок_2_m : integer
-	Бросок_3_r : integer
-	Бросок_3_f : real
-	Бросок_3_m : integer
-	Среднее  : real
-	Максимальное : integer
-	Сумма : integer
-	количестов_попыток : integer
-	состояние_cтрелка : ( Стреляет, Ожидает ) = Ожидает
+	Р‘СЂРѕСЃРѕРє_1_r : integer
+	Р‘СЂРѕСЃРѕРє_1_f : real
+	Р‘СЂРѕСЃРѕРє_1_m : integer
+	Р‘СЂРѕСЃРѕРє_2_r : integer
+	Р‘СЂРѕСЃРѕРє_2_f : real
+	Р‘СЂРѕСЃРѕРє_2_m : integer
+	Р‘СЂРѕСЃРѕРє_3_r : integer
+	Р‘СЂРѕСЃРѕРє_3_f : real
+	Р‘СЂРѕСЃРѕРє_3_m : integer
+	РЎСЂРµРґРЅРµРµ  : real
+	РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ : integer
+	РЎСѓРјРјР° : integer
+	РєРѕР»РёС‡РµСЃС‚РѕРІ_РїРѕРїС‹С‚РѕРє : integer
+	СЃРѕСЃС‚РѕСЏРЅРёРµ_cС‚СЂРµР»РєР° : ( РЎС‚СЂРµР»СЏРµС‚, РћР¶РёРґР°РµС‚ ) = РћР¶РёРґР°РµС‚
 $End
 
-$Resource_type Стрелы: temporary
+$Resource_type РЎС‚СЂРµР»С‹: temporary
 $Parameters
-	Состояние	: ( Используется, Не_используется )
-	Стрела_1_r  : integer
-	Стрела_1_f  : real
-	Стрела_2_r  : integer
-	Стрела_2_f  : real
-	Стрела_3_r  : integer
-	Стрела_3_f  : real
+	РЎРѕСЃС‚РѕСЏРЅРёРµ	: ( РСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ, РќРµ_РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ )
+	РЎС‚СЂРµР»Р°_1_r  : integer
+	РЎС‚СЂРµР»Р°_1_f  : real
+	РЎС‚СЂРµР»Р°_2_r  : integer
+	РЎС‚СЂРµР»Р°_2_f  : real
+	РЎС‚СЂРµР»Р°_3_r  : integer
+	РЎС‚СЂРµР»Р°_3_f  : real
 $End
 

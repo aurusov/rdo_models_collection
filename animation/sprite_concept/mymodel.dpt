@@ -1,5 +1,5 @@
 $Decision_point model: some
 $Condition NoCheck
 $Activities
-	Подсчет: Образец_подсчета
+	РџРѕРґСЃС‡РµС‚: РћР±СЂР°Р·РµС†_РїРѕРґСЃС‡РµС‚Р°
 $End

@@ -11,11 +11,11 @@ $Sequence rndr : real
 $Type = uniform 123456789
 $End
 
-$Sequence Интервал_подготовки : real
+$Sequence РРЅС‚РµСЂРІР°Р»_РїРѕРґРіРѕС‚РѕРІРєРё : real
 $Type = exponential 123456789
 $End
 
-$Sequence Длительность_стрельбы : real
+$Sequence Р”Р»РёС‚РµР»СЊРЅРѕСЃС‚СЊ_СЃС‚СЂРµР»СЊР±С‹ : real
 $Type = uniform 123456789
 $End
 

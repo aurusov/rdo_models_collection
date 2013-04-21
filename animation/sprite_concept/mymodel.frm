@@ -1,4 +1,4 @@
-//SpriteModel на защиту
+//SpriteModel РЅР° Р·Р°С‰РёС‚Сѓ
 $Sprite StrelokInfo()
 	integer center = 2*R + 30;
 	integer step = R*2/num;
@@ -19,31 +19,31 @@ $Sprite StrelokInfo()
 	text (center - 10,center - 10,20,20,transparent,black,= num);
 	
 	rect (550, 50, 210,  30,transparent,black);
-	text (550, 50, 210,  30,transparent,black,= 'Таблица результатов');
+	text (550, 50, 210,  30,transparent,black,= 'РўР°Р±Р»РёС†Р° СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ');
 	rect (760,230,-210,-180,transparent,black);
 	
 	rect (550,80 , 70, 30,transparent,black);
-	text (550,80 , 70, 30,transparent,black,= 'Бросок 1');
+	text (550,80 , 70, 30,transparent,black,= 'Р‘СЂРѕСЃРѕРє 1');
 	rect (550,110, 70, 30,transparent,black);
 	
 	rect (620, 80, 70, 30,transparent,black);
-	text (620, 80, 70, 30,transparent,black,= 'Бросок 2');
+	text (620, 80, 70, 30,transparent,black,= 'Р‘СЂРѕСЃРѕРє 2');
 	rect (620,110, 70, 30,transparent,black);
 	
 	rect (690, 80, 70, 30,transparent,black);
-	text (690, 80, 70, 30,transparent,black,= 'Бросок 3');
+	text (690, 80, 70, 30,transparent,black,= 'Р‘СЂРѕСЃРѕРє 3');
 	rect (690,110, 70, 30,transparent,black);
 		
 	rect (550,140,140, 30,transparent,black);
-	text (550,140,140, 30,transparent,black,= 'Максимальное');
+	text (550,140,140, 30,transparent,black,= 'РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ');
 	rect (690,140, 70, 30,transparent,black);
 	
 	rect (550,170,140, 30,transparent,black);
-	text (550,170,140, 30,transparent,black,= 'Среднее');
+	text (550,170,140, 30,transparent,black,= 'РЎСЂРµРґРЅРµРµ');
 	rect (690,170, 70, 30,transparent,black);
 		
 	rect (550,200,140, 30,transparent,black);
-	text (550,200,140, 30,transparent,black,= 'Сумма');
+	text (550,200,140, 30,transparent,black,= 'РЎСѓРјРјР°');
 	rect (690,200, 70, 30,transparent,black);
 $End
 
@@ -52,15 +52,15 @@ $Back_picture = <23, 124, 253> 1148 480
 	sprite StrelokInfo();
 	integer center =2*R + 30;
 	integer step = R*2/num;
-	text (550,110,70,30,transparent,black,= Петр.Бросок_1_m);
-	text (620,110,70,30,transparent,black,= Петр.Бросок_2_m);
-	text (690,110,70,30,transparent,black,= Петр.Бросок_3_m);	
-	text (690,170,70,30,transparent,black,= Петр.Среднее);
-	text (690,140,70,30,transparent,black,= Петр.Максимальное);
-	text (690,200,70,30,transparent,black,= Петр.Сумма);
-	circle (center + Петр.Бросок_1_r*Cos(Петр.Бросок_1_f),center + Петр.Бросок_1_r*Sin(Петр.Бросок_1_f),5,black,black);
-	circle (center + Петр.Бросок_2_r*Cos(Петр.Бросок_2_f),center + Петр.Бросок_2_r*Sin(Петр.Бросок_2_f),5,black,black);
-	circle (center + Петр.Бросок_3_r*Cos(Петр.Бросок_3_f),center + Петр.Бросок_3_r*Sin(Петр.Бросок_3_f),5,black,black);
+	text (550,110,70,30,transparent,black,= РџРµС‚СЂ.Р‘СЂРѕСЃРѕРє_1_m);
+	text (620,110,70,30,transparent,black,= РџРµС‚СЂ.Р‘СЂРѕСЃРѕРє_2_m);
+	text (690,110,70,30,transparent,black,= РџРµС‚СЂ.Р‘СЂРѕСЃРѕРє_3_m);	
+	text (690,170,70,30,transparent,black,= РџРµС‚СЂ.РЎСЂРµРґРЅРµРµ);
+	text (690,140,70,30,transparent,black,= РџРµС‚СЂ.РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ);
+	text (690,200,70,30,transparent,black,= РџРµС‚СЂ.РЎСѓРјРјР°);
+	circle (center + РџРµС‚СЂ.Р‘СЂРѕСЃРѕРє_1_r*Cos(РџРµС‚СЂ.Р‘СЂРѕСЃРѕРє_1_f),center + РџРµС‚СЂ.Р‘СЂРѕСЃРѕРє_1_r*Sin(РџРµС‚СЂ.Р‘СЂРѕСЃРѕРє_1_f),5,black,black);
+	circle (center + РџРµС‚СЂ.Р‘СЂРѕСЃРѕРє_2_r*Cos(РџРµС‚СЂ.Р‘СЂРѕСЃРѕРє_2_f),center + РџРµС‚СЂ.Р‘СЂРѕСЃРѕРє_2_r*Sin(РџРµС‚СЂ.Р‘СЂРѕСЃРѕРє_2_f),5,black,black);
+	circle (center + РџРµС‚СЂ.Р‘СЂРѕСЃРѕРє_3_r*Cos(РџРµС‚СЂ.Р‘СЂРѕСЃРѕРє_3_f),center + РџРµС‚СЂ.Р‘СЂРѕСЃРѕРє_3_r*Sin(РџРµС‚СЂ.Р‘СЂРѕСЃРѕРє_3_f),5,black,black);
 $End
 
 $Frame Ivan_frame 
@@ -68,15 +68,15 @@ $Back_picture = <58, 204, 147> 1148 480
 	sprite StrelokInfo();
 	integer center = 2*R + 30;
 	integer step = R*2/num;
-	text (550,110,70,30,transparent,black,= Иван.Бросок_1_m);
-	text (620,110,70,30,transparent,black,= Иван.Бросок_2_m);
-	text (690,110,70,30,transparent,black,= Иван.Бросок_3_m);	
-	text (690,170,70,30,transparent,black,= Иван.Среднее);
-	text (690,140,70,30,transparent,black,= Иван.Максимальное);
-	text (690,200,70,30,transparent,black,= Иван.Сумма);
-	circle (center + Иван.Бросок_1_r*Cos(Иван.Бросок_1_f),center + Иван.Бросок_1_r*Sin(Иван.Бросок_1_f),5,black,black);
-	circle (center + Иван.Бросок_2_r*Cos(Иван.Бросок_2_f),center + Иван.Бросок_2_r*Sin(Иван.Бросок_2_f),5,black,black);
-	circle (center + Иван.Бросок_3_r*Cos(Иван.Бросок_3_f),center + Иван.Бросок_3_r*Sin(Иван.Бросок_3_f),5,black,black);
+	text (550,110,70,30,transparent,black,= РРІР°РЅ.Р‘СЂРѕСЃРѕРє_1_m);
+	text (620,110,70,30,transparent,black,= РРІР°РЅ.Р‘СЂРѕСЃРѕРє_2_m);
+	text (690,110,70,30,transparent,black,= РРІР°РЅ.Р‘СЂРѕСЃРѕРє_3_m);	
+	text (690,170,70,30,transparent,black,= РРІР°РЅ.РЎСЂРµРґРЅРµРµ);
+	text (690,140,70,30,transparent,black,= РРІР°РЅ.РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ);
+	text (690,200,70,30,transparent,black,= РРІР°РЅ.РЎСѓРјРјР°);
+	circle (center + РРІР°РЅ.Р‘СЂРѕСЃРѕРє_1_r*Cos(РРІР°РЅ.Р‘СЂРѕСЃРѕРє_1_f),center + РРІР°РЅ.Р‘СЂРѕСЃРѕРє_1_r*Sin(РРІР°РЅ.Р‘СЂРѕСЃРѕРє_1_f),5,black,black);
+	circle (center + РРІР°РЅ.Р‘СЂРѕСЃРѕРє_2_r*Cos(РРІР°РЅ.Р‘СЂРѕСЃРѕРє_2_f),center + РРІР°РЅ.Р‘СЂРѕСЃРѕРє_2_r*Sin(РРІР°РЅ.Р‘СЂРѕСЃРѕРє_2_f),5,black,black);
+	circle (center + РРІР°РЅ.Р‘СЂРѕСЃРѕРє_3_r*Cos(РРІР°РЅ.Р‘СЂРѕСЃРѕРє_3_f),center + РРІР°РЅ.Р‘СЂРѕСЃРѕРє_3_r*Sin(РРІР°РЅ.Р‘СЂРѕСЃРѕРє_3_f),5,black,black);
 $End
 
 $Frame Stepan_frame 
@@ -84,13 +84,13 @@ $Back_picture = <213, 187, 66> 1148 480
 	sprite StrelokInfo();
 	integer center = 2*R + 30;
 	integer step = R*2/num;
-	text (550,110,70,30,transparent,black,= Степан.Бросок_1_m);
-	text (620,110,70,30,transparent,black,= Степан.Бросок_2_m);
-	text (690,110,70,30,transparent,black,= Степан.Бросок_3_m);	
-	text (690,170,70,30,transparent,black,= Степан.Среднее);
-	text (690,140,70,30,transparent,black,= Степан.Максимальное);
-	text (690,200,70,30,transparent,black,= Степан.Сумма);
-	circle (center + Степан.Бросок_1_r*Cos(Степан.Бросок_1_f),center + Степан.Бросок_1_r*Sin(Степан.Бросок_1_f),5,black,black);
-	circle (center + Степан.Бросок_2_r*Cos(Степан.Бросок_2_f),center + Степан.Бросок_2_r*Sin(Степан.Бросок_2_f),5,black,black);
-	circle (center + Степан.Бросок_3_r*Cos(Степан.Бросок_3_f),center + Степан.Бросок_3_r*Sin(Степан.Бросок_3_f),5,black,black);
+	text (550,110,70,30,transparent,black,= РЎС‚РµРїР°РЅ.Р‘СЂРѕСЃРѕРє_1_m);
+	text (620,110,70,30,transparent,black,= РЎС‚РµРїР°РЅ.Р‘СЂРѕСЃРѕРє_2_m);
+	text (690,110,70,30,transparent,black,= РЎС‚РµРїР°РЅ.Р‘СЂРѕСЃРѕРє_3_m);	
+	text (690,170,70,30,transparent,black,= РЎС‚РµРїР°РЅ.РЎСЂРµРґРЅРµРµ);
+	text (690,140,70,30,transparent,black,= РЎС‚РµРїР°РЅ.РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ);
+	text (690,200,70,30,transparent,black,= РЎС‚РµРїР°РЅ.РЎСѓРјРјР°);
+	circle (center + РЎС‚РµРїР°РЅ.Р‘СЂРѕСЃРѕРє_1_r*Cos(РЎС‚РµРїР°РЅ.Р‘СЂРѕСЃРѕРє_1_f),center + РЎС‚РµРїР°РЅ.Р‘СЂРѕСЃРѕРє_1_r*Sin(РЎС‚РµРїР°РЅ.Р‘СЂРѕСЃРѕРє_1_f),5,black,black);
+	circle (center + РЎС‚РµРїР°РЅ.Р‘СЂРѕСЃРѕРє_2_r*Cos(РЎС‚РµРїР°РЅ.Р‘СЂРѕСЃРѕРє_2_f),center + РЎС‚РµРїР°РЅ.Р‘СЂРѕСЃРѕРє_2_r*Sin(РЎС‚РµРїР°РЅ.Р‘СЂРѕСЃРѕРє_2_f),5,black,black);
+	circle (center + РЎС‚РµРїР°РЅ.Р‘СЂРѕСЃРѕРє_3_r*Cos(РЎС‚РµРїР°РЅ.Р‘СЂРѕСЃРѕРє_3_f),center + РЎС‚РµРїР°РЅ.Р‘СЂРѕСЃРѕРє_3_r*Sin(РЎС‚РµРїР°РЅ.Р‘СЂРѕСЃРѕРє_3_f),5,black,black);
 $End

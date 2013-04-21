@@ -1,10 +1,10 @@
-$Resource_type Фишка : permanent
+$Resource_type Р¤РёС€РєР° : permanent
 $Parameters
-  Номер: integer[1..5]
-  Местоположение: integer[1..6]
+  РќРѕРјРµСЂ: integer[1..5]
+  РњРµСЃС‚РѕРїРѕР»РѕР¶РµРЅРёРµ: integer[1..6]
 $End
 
-$Resource_type Дырка_t : permanent
+$Resource_type Р”С‹СЂРєР°_t : permanent
 $Parameters
-  Место: integer[1..6]
+  РњРµСЃС‚Рѕ: integer[1..6]
 $End

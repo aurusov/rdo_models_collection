@@ -1,11 +1,11 @@
-Model_name = Heidel
+Model_name = heidel
 
-Resource_file  = Heidel
-OprIev_file    = Heidel
-Frame_file     = Heidel
-Statistic_file = Heidel
-Results_file   = Heidel
-Trace_file     = Heidel
+Resource_file  = heidel
+OprIev_file    = heidel
+Frame_file     = heidel
+Statistic_file = heidel
+Results_file   = heidel
+Trace_file     = heidel
 {Trace_StartTime= 3.5}
 {Trace_EndTime  = 2.0}
 Show_mode      = Animation

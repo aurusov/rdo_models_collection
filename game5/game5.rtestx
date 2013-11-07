@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test>
+  <model name="game5.rdox" target="CONSOLE" exit_code="0"/>
+  <etalons>
+    <file source="game5.trc" target="game5_etalon.trc" type="TRACE"/>
+  </etalons>
+</test>

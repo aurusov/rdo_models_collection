@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<test>
-  <model>game5.rdox</model>
-  <target>CONSOLE</target>
-  <exit_code>0</exit_code>
-  <trace>game5_etalon.trc</trace>
-  <result>game5_etalon.pmv</result>
-</test>

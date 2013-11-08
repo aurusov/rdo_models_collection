@@ -2,7 +2,6 @@ Results_file   = game5.pmv    Thu Nov 29 03:08:18 2012
 Run_file       = game5.smr
 Model_name     = game5
 Resource_file  = game5.rss
-OprIev_file    = game5.opr
 
 $Changes
 
@@ -13,7 +12,6 @@ $Resource_type
   2 Местоположение I
 2 Дырка_t 1
   1 Место I
-3 RTPCorba 0
 
 $Resources
 1 Фишка1 1
@@ -27,6 +25,7 @@ $Pattern
 1 Перемещение_фишки R 2 1 2
 
 $Activities
+
 
 1 Перемещение_вправо 1
 2 Перемещение_влево 1

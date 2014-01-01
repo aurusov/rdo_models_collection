@@ -3,11 +3,11 @@ $Relevant_resources
 	_Баржа       : Баржа        Keep
 	_Контейнер   : Контейнеры    Create
 $Body
-_Баржа
+_Баржа:
 	Convert_event
 		Заказ_на_контейнер.planning( time_now + Интервал_прихода( 9 ) );
 		
-_Контейнер
+_Контейнер:
 	Convert_event trace
 		состояние = Заказан;
 		integer c = rand(0, 100);

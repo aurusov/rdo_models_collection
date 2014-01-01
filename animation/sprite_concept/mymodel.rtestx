@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test>
+  <model name="mymodel.rdox" target="CONSOLE" exit_code="0"/>
+  <etalons>
+    <file source="mymodel.trc" target="mymodel_etalon.trc" type="TRACE"/>
+  </etalons>
+</test>

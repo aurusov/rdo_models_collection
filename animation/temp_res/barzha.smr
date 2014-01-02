@@ -4,4 +4,4 @@ Show_rate       = 8000.0
 
 Заказ_на_контейнер.planning( time_now + 4 )
 
-Terminate_if Time_now >= 12 * 7 * 6000
+Terminate_if Time_now >= 12 * 7 * 6

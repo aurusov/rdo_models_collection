@@ -1,31 +1,31 @@
 $Decision_point model: some
 $Condition NoCheck
 $Activities
-  Trunks_generation             : Trunks_generation_pat
-  Orders_arrival                : Orders_arrival_pat
-  Storage_allocation            : Storage_allocation_pat
-  Trunk_passing_T2_C2           : Trunk_passing_T2_C2_pat
-  Trunk_passing_T1_C1           : Trunk_passing_T1_C1_pat
-  Trunk_passing_C1_C2           : Trunk_passing_C1_C2_pat
-  Measurement_on                : Measurement_on_pat
-  Measurement_off               : Measurement_off_pat
-  Splitting                     : Splitting_pat
-  End_of_splitting              : End_of_splitting_pat
-  Backward_switching            : Backward_switching_pat
-  Stop_switching                : Stop_switching_pat
-  Edge_cleaning                 : Edge_cleaning_pat
-  Positioned_switching          : Positioned_switching_pat
-  Cutting                       : Cutting_pat
-  Trunk_passing_C2_C3           : Trunk_passing_C2_C3_pat
-  Trunk_passing_C3_T3           : Trunk_passing_C3_T3_pat
-  Trunk_passing_C3_S30          : Trunk_passing_C3_S30_pat
-  Rest_of_trunk_erasing         : Rest_of_trunk_erasing_pat
-  Trunk_passing_T3_C4           : Trunk_passing_T3_C4_pat
-  Trunk_passing_C4_C5           : Trunk_passing_C4_C5_pat
-  Conveyer_movement_forward     : Conveyer_movement_forward_pat
-  Conveyer_movement_backward    : Conveyer_movement_backward_pat
-  Transporter_movement_forward  : Transporter_movement_forward_pat
+  Trunks_generation             : Trunks_generation_pat;
+  Orders_arrival                : Orders_arrival_pat;
+  Storage_allocation            : Storage_allocation_pat;
+  Trunk_passing_T2_C2           : Trunk_passing_T2_C2_pat;
+  Trunk_passing_T1_C1           : Trunk_passing_T1_C1_pat;
+  Trunk_passing_C1_C2           : Trunk_passing_C1_C2_pat;
+  Measurement_on                : Measurement_on_pat;
+  Measurement_off               : Measurement_off_pat;
+  Splitting                     : Splitting_pat;
+  End_of_splitting              : End_of_splitting_pat;
+  Backward_switching            : Backward_switching_pat;
+  Stop_switching                : Stop_switching_pat;
+  Edge_cleaning                 : Edge_cleaning_pat;
+  Positioned_switching          : Positioned_switching_pat;
+  Cutting                       : Cutting_pat;
+  Trunk_passing_C2_C3           : Trunk_passing_C2_C3_pat;
+  Trunk_passing_C3_T3           : Trunk_passing_C3_T3_pat;
+  Trunk_passing_C3_S30          : Trunk_passing_C3_S30_pat;
+  Rest_of_trunk_erasing         : Rest_of_trunk_erasing_pat;
+  Trunk_passing_T3_C4           : Trunk_passing_T3_C4_pat;
+  Trunk_passing_C4_C5           : Trunk_passing_C4_C5_pat;
+  Conveyer_movement_forward     : Conveyer_movement_forward_pat;
+  Conveyer_movement_backward    : Conveyer_movement_backward_pat;
+  Transporter_movement_forward  : Transporter_movement_forward_pat;
 
-  Erasement                     : Erasement_pat
-  Order_completing              : Order_completing_pat
+  Erasement                     : Erasement_pat;
+  Order_completing              : Order_completing_pat;
 $End

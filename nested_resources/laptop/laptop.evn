@@ -1,0 +1,20 @@
+$Pattern Client_coming : event trace
+$Relevant_resources
+	_Client: Clients Create
+$Body
+_Client:
+	Convert_event
+		Client_coming.planning( time_now + normal_sequence(20,5));
+		money_available = Money_Available();
+		desired_Laptop.weight = Choose_weight();
+		desired_Laptop.screen_size = Choose_Screen_Size();
+		desired_Laptop.RAM.memory_size = Choose_RAM_size();
+		desired_Laptop.RAM.clock_rate = Choose_RAM_clock_rate();
+		desired_Laptop.Graphic_Card.memory_size = Choose_GC_memory_size();
+		desired_Laptop.Graphic_Card.memory_clock = Choose_GC_clock_rate();
+		desired_Laptop.CPU.number_of_cores = Choose_CPU_number_of_cores();
+		desired_Laptop.CPU.clock_rate = Choose_CPU_clock_rate();
+		desired_Laptop.HDD.memory_size = Choose_HDD_memory_size();
+		desired_Laptop.HDD.rotational_frequency = Choose_HDD_rotational_frequency();
+		status = Ready;
+$End

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test>
+  <model name="laptop.rdox" target="CONSOLE" exit_code="0"/>
+  <etalons>
+    <file source="laptop.trc" target="laptop_etalon.trc" type="TRACE"/>
+    <file source="laptop.pmv" target="laptop_etalon.pmv" type="RESULT"/>
+  </etalons>
+</test>

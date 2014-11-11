@@ -1,0 +1,24 @@
+$Results
+	Unsatistied_Clients : watch_value Clients NoCheck Clients.status
+	Test_quant : watch_quant Clients Clients.desired_Laptop.weight < 3
+	Test_value : watch_value Clients NoCheck Clients.desired_Laptop.weight 
+	Average_weight_requirement : watch_value Clients NoCheck Clients.desired_Laptop.weight
+	Rating_Laptop_1 : watch_par Laptop_1.rating
+	Rating_Laptop_2 : watch_par Laptop_2.rating
+	Rating_Laptop_3 : watch_par Laptop_3.rating
+	HDD_Rating_Laptop_1 : watch_par Laptop_1.HDD.rating
+	RAM_Rating_Laptop_2 : watch_par Laptop_2.RAM.rating
+	CPU_Rating_Laptop_3 : watch_par Laptop_3.CPU.rating
+	HDD_1_2_comparison : watch_state Laptop_1.HDD.rating > Laptop_2.HDD.rating
+	CPU_2_3_comparison : watch_state Laptop_2.CPU.rating > Laptop_3.CPU.rating
+	RAM_3_1_comparison : watch_state Laptop_3.RAM.rating > Laptop_1.RAM.rating
+	Sold_Laptop_1 : get_value Laptop_1.sold
+	Sold_Laptop_2 : get_value Laptop_2.sold
+	Sold_Laptop_3 : get_value Laptop_3.sold
+	Money_got_from_Laptop_1 : get_value Laptop_1.sold * Laptop_1.price
+	Money_got_from_Laptop_2 : get_value Laptop_2.sold * Laptop_2.price
+	Money_got_from_Laptop_3 : get_value Laptop_3.sold * Laptop_3.price
+	Total_money_got : get_value Laptop_1.sold * Laptop_1.price +
+								Laptop_2.sold * Laptop_2.price +
+								Laptop_3.sold * Laptop_3.price
+$End

@@ -1,0 +1,38 @@
+$Resources
+	Laptop_1 = Laptop(
+		CPU_Type(4, 3700, *),
+		RAM_Type(4096, 1600, *),
+		Graphic_Card_Type(2048, 2600, *),
+		HDD_Type(500, 7200, *),
+		15.6,
+		2.1,
+		1499,
+		50,
+		*,
+		0
+	);			
+	Laptop_2 = Laptop(
+		CPU_Type(2, 2700, *),
+		RAM_Type(2048, 1333, *),
+		Graphic_Card_Type(1024, 1200, *),
+		HDD_Type(500, 5400, *),
+		17.3,
+		1.5,
+		799,
+		50,
+		*,
+		0
+	);				
+	Laptop_3 = Laptop(
+		CPU_Type(2, 2300, *),
+		RAM_Type(1024, 700, *),
+		Graphic_Card_Type(512, 600, *),
+		HDD_Type(320, 5400, *),
+		15.6,
+		1.8,
+		499,
+		50,
+		*,
+		0
+	);					
+$End

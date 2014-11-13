@@ -1,0 +1,48 @@
+$Resource_type CPU_Type: permanent
+$Parameters
+	number_of_cores:  integer = 1
+	clock_rate: integer = 0
+	rating: real = 0
+$End
+
+$Resource_type RAM_Type: permanent
+$Parameters
+	memory_size: integer = 0
+	clock_rate: integer = 0
+	rating: real = 0
+$End
+
+$Resource_type Graphic_Card_Type: permanent
+$Parameters
+	memory_size: integer = 0
+	memory_clock: integer = 0
+	rating: real = 0
+$End
+
+$Resource_type HDD_Type: permanent
+$Parameters
+	memory_size: integer = 0
+	rotational_frequency: integer = 0
+	rating: real = 0
+$End
+
+$Resource_type Laptop: permanent
+$Parameters
+	CPU: CPU_Type
+	RAM: RAM_Type
+	Graphic_Card: Graphic_Card_Type
+	HDD: HDD_Type
+	screen_size: real
+	weight: real
+	price: integer = 0
+	amount: integer = 0
+	sold: integer = 0
+	rating: real = 0
+$End
+
+$Resource_type Clients: temporary
+$Parameters
+	desired_Laptop : Laptop
+	money_available : real = 0
+	status: (Ready, Done)
+$End

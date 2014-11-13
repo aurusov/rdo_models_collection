@@ -1,0 +1,7 @@
+$Decision_point client_choosing: some
+$Condition NoCheck
+$Activities
+	Choosing_laptop: Choosing_laptop_pattern
+	Client_leaving: Client_leaving_pattern
+$End
+

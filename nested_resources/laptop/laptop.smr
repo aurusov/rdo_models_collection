@@ -1,0 +1,6 @@
+Show_mode      = NoShow
+Show_rate      = 3600.0
+
+Client_coming.planning( time_now + normal_sequence(20,5) )
+
+Terminate_if Time_now >= 3000
